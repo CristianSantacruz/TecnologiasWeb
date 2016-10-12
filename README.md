@@ -25,6 +25,17 @@ Para nosotros utilizar el formateo de codigo dentro de texto plano debemos de ut
 
 Para utilizar el formateo de codigo en un bloque de codigo necesitamos utilizar 3 `Tildes invertidas` donde se puede especificar el lenguaje de programacion a usarse para el formateo del codigo, justo despues de las 3 `Tildes invertidas`
 
+* Bloque de código con `javascript`
 ```javascript
 var mensaje="Hola mundo";
 ```
+* Bloque de código de una `consola`
+```
+> apt-get update paquete
+```
+* Bloque de `HTML`
+```
+<html>
+<\html>
+```
+
