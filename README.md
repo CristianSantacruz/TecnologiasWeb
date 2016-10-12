@@ -55,3 +55,17 @@ Paraescribir varias citas de citas concatenamos con el signo mayor que.
 > Yo solo sé que nada sé.
 
 > Un filosofo random.
+
+## Saltos de Línea
+Para usar saltos de línea hay que utilizar más de tres veces los caracteres `---, *** o ___`
+
+***
+
+---
+
+___
+
+## Videos de Youtube
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
+" target="_blank"><img src="https://www.google.com.ec/search?q=js&espv=2&biw=1600&bih=799&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjvy4G__dXPAhVG_R4KHWDRDhgQ_AUIBigB#imgrc=kAdel_UofKlGEM%3A" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
