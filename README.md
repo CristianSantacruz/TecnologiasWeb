@@ -48,3 +48,10 @@ Valor 1 C1|Valor 1 C1|Valor 1 C1|Valor 1 C1
 Valor 2 C2|Valor 2 C2|Valor 2 C2|Valor 2 C2
 Valor 3 C3|Valor 3 C3|Valor 3 C3|Valor 3 C3
 Valor 4 C4|Valor 4 C4|Valor 4 C4|Valor 4 C4
+
+## Tablas de texto
+Paraescribir varias citas de citas concatenamos con el signo mayor que.
+
+> Yo solo sé que nada sé.
+
+> Un filosofo random.
