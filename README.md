@@ -40,7 +40,8 @@ var mensaje="Hola mundo";
 ```
 
 ## Tablas
-Para usar tablas debemos definir las filas con |
+Para usar tablas debemos definir las filas con pipe |.
+
 Columna 1|Columna 2|Columna 3|Columna 4
 ---|---|---|---
 Valor 1 C1|Valor 1 C1|Valor 1 C1|Valor 1 C1
