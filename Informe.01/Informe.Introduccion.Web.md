@@ -12,7 +12,9 @@
 * Tema
 * Objetivos
 * Marco Teórico
-* Desarrollo de la Práctica Conclusiones y Recomendaciones
+* Desarrollo de la Práctica
+* Conclusiones y Recomendaciones
+
 ---
 
 ## Tema:
