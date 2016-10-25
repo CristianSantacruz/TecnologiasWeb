@@ -9,11 +9,11 @@
 ---
 
 ## Índice de Contenidos:
-* #### **Tema**
-* #### **Objetivos**
-* #### **Marco Teórico**
-* #### **Desarrollo de la Práctica**
-* #### **Conclusiones y Recomendaciones**
+* #### Tema
+* #### Objetivos
+* #### Marco Teórico
+* #### Desarrollo de la Práctica
+* #### Conclusiones y Recomendaciones
 ---
 
 ## Tema:
