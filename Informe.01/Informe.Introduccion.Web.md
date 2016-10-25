@@ -9,11 +9,11 @@
 ---
 
 ## Índice de Contenidos:
-* ####**Tema**
-* ####**Objetivos**
-* ####**Marco Teórico**
-* ####**Desarrollo de la Práctica**
-* ####**Conclusiones y Recomendaciones**
+* #### **Tema**
+* #### **Objetivos**
+* #### **Marco Teórico**
+* #### **Desarrollo de la Práctica**
+* #### **Conclusiones y Recomendaciones**
 ---
 
 ## Tema:
@@ -26,6 +26,7 @@
 * Aprender el uso de estilos en HTML.
 * Conocer herramientas de desarrolleres Web.
 * Analizar la cabecera de una página HTML.
+
 ---
 
 ## Marco Teórico:
