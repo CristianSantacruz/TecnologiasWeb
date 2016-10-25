@@ -1,0 +1,34 @@
+ html{
+            background-color: #687fd4;
+            
+        }
+        
+        body{
+            
+            background-color: azure;
+        }
+        
+        h1{
+            background-color: #67327gd;
+        }
+        
+        p{
+            background-color: #12435bgfhb;
+        }
+        
+        .nombreClaseRojo{
+            background-color: red;
+        }
+        
+        .nombreClaseAzul{
+            background-color: blue;
+        }
+        
+        .nombreClaseAmarillo{
+            background-color: yellow;
+        }
+        
+        /*Seleccionar por ID*/
+        #parrafoVerde{
+            background-color: greenyellow;
+        }
