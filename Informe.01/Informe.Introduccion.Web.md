@@ -121,8 +121,8 @@ Sin embargo los objetivos de W3C van mas allá de el desarrollo de HTML y trabaj
         <img src="http://www.gratistodo.com/contenido/videos-gratis/series-de-tv/caballeros-del-zodiaco.jpg">
     </a>
     
-    ```
-
+```
+<br>
 <p align="center">
     <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Imagenes.Enlaces.png?raw=true">
 </p>
