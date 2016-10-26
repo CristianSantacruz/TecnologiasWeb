@@ -90,6 +90,46 @@ Sin embargo los objetivos de W3C van mas allá de el desarrollo de HTML y trabaj
 
 <a name="Desarrollo de la Práctica"></a>
 ## Desarrollo de la Práctica:
+* **Postman es una herramienta que nos permite revisar los códigos de estatutos de HTML.**
+
+<p align="center">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Postman.png?raw=true">
+</p>
+
+* ** Los TAGS ```<h1> a <h6>``` nos permiten poner encabezados al documento HTML.**
+
+<p align="center">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Cabeceras.png?raw=true">
+</p>
+
+* ** Los TAGS ```<p> ... </p>``` nos permiten crear p+arrafos en el documento HTML.**
+
+<p align="center">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Parrafo.png?raw=true">
+</p>
+
+* ** Los TAGS ```<!-- ... -->``` nos permiten comentar bloques de código en el documento HTML.**
+
+<p align="center">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Comentarios.png?raw=true">
+</p>
+
+* ** Se puede crear imagenes que nos redireccione a otras páginas Web:**
+```
+<a href="https://es.wikipedia.org/wiki/Saint_Seiya" target="blank">
+        <img src="http://www.gratistodo.com/contenido/videos-gratis/series-de-tv/caballeros-del-zodiaco.jpg">
+    </a>
+    ```
+
+<p align="center">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Imagenes.Enlaces.png?raw=true">
+</p>
+
+Despúes de dar click en esta imagen nos redirecciona a la siguiente página Web.
+
+<p align="center">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Redireccion.png?raw=true">
+</p>
 
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones:
