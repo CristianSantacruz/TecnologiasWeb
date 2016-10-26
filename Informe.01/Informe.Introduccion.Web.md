@@ -93,3 +93,7 @@ Sin embargo los objetivos de W3C van mas allá de el desarrollo de HTML y trabaj
 
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones:
+* Al igual que otros lenguajes de programación HTML tamnbién nos permite comentar bloques de código.
+* HTML nos permite usar estilos para mejorar la presentación de las paginas Web.
+* Mediante una imagen en el documento HTML podemos redireccionarnos a otra pagina Web.
+* Se recomienda realizar las prácticas con mayor detenimiento y no ir tan rápido.
