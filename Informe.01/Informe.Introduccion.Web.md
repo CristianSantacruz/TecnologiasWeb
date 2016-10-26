@@ -55,6 +55,29 @@
 </p>
 
 <br>
+### Algunos Elementos de HTML:
+```
+<!DOCTYPE>      --> Define el tipo de Documento
+<html>          --> Define un Documento HTML
+<title>         --> Define un título para el Documento
+<body>          --> Define el cuerpo del Documento
+<h1> a <h6>     --> Define los encabezados HTML
+<p>             --> Define un párrafo
+<br>            --> Inserta una línea en blanco
+<!-- ... -->    --> Define un comentario
+<table>         --> Tabla
+<img>           --> Define una inagen
+<ol>            --> Define una lista ordenada
+<ul>            --> Define una lista desordenada
+<li>            --> Define un ítem de una lista
+<link>          --> Define información relacional para el Documento
+<a>             --> Define un hipervínculo
+<video>         --> Video
+<audio>         --> Audio
+```
+(Fuente: <a href="http://www.htmlquick.com/es/reference/tags.html">Tutoriales y Referencias sobre HTML</a>)
+
+<br>
 ### W3C:
 <p align="justify">
     W3C son las siglas de World Wide Web Consortium , y es una comunidad internacional donde los estados miembros trabajan para poder desarrollar estándares para el desarrollo web y asi ayudar a un mejor desarrollo de el Internet a nivel mundial.
