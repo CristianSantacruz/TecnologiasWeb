@@ -87,6 +87,29 @@
     <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/02-CSS/Informe/Graficos/Pagina.png?raw=true" width="700" height="300">
 </p>
 
+* **La hoja de estilos por lo general se la define con la siguiente estructura de código**
+
+```
+html{
+            background-color: #687fd4;
+            
+        }
+        
+        body{
+            
+            background-color: azure;
+        }
+        
+        h1{
+            background-color: #67327gd;
+        }
+        
+        p{
+            background-color: #12435bgfhb;
+        }
+        
+
+```
 
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones:
