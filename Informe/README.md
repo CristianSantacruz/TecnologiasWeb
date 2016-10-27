@@ -18,17 +18,15 @@
 ---
 <a name="Tema"></a>
 ## Tema:
-### Introducción a la Web
+### Manejo de Estilos en HTML
 ---
 
 <a name="Objetivos"></a>
 ## Objetivos:
-* Conocer conceptos básicos sobre la Web.
-* Aprender la estructura básica de una página HTML.
+* Aprender a crear archivos .css
+* Aprender a crear clases dentro del documento HTML.
 * Aprender el uso de estilos en HTML.
-* Conocer herramientas de desarrolleres Web.
-* Analizar la cabecera de una página HTML.
-
+* Aprender a levantar un mini Servidor Web.
 ---
 
 <a name="Marco Teórico"></a>
