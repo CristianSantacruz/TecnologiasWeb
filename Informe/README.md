@@ -67,7 +67,7 @@
 </p>
 
 <p align="center">
-    <img src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/courses/3325491/14570025107476_illus_prenez-en-main-bootstrap.png?raw=true" width="400" height="200">
+    <img src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/courses/3325491/14570025107476_illus_prenez-en-main-bootstrap.png?raw=true" width="300" height="200">
 </p>
 
 <br>
