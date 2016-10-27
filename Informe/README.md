@@ -27,6 +27,7 @@
 * Aprender a crear clases dentro del documento HTML.
 * Aprender el uso de estilos en HTML.
 * Aprender a levantar un mini Servidor Web.
+
 ---
 
 <a name="Marco Teórico"></a>
