@@ -39,8 +39,7 @@
 </p>
 
 <palign="justify">
-    Con las hojas de estilo es más fácil especificar la cantidad de espacio entre líneas, el sangrado de las líneas, los colores a utilizar para el texto y el fondo, el tamaño
-     y estilo de las fuentes, y otros muchos detalles. (Fuente: <a href="http://html.conclase.net/w3c/html401-es/present/styles.html#h-14.1">Hojas de Estilo</a>)
+    Con las hojas de estilo es más fácil especificar la cantidad de espacio entre líneas, el sangrado de las líneas, los colores a utilizar para el texto y el fondo, el tamaño y estilo de las fuentes, y otros muchos detalles. (Fuente: <a href="http://html.conclase.net/w3c/html401-es/present/styles.html#h-14.1">Hojas de Estilo</a>)
 </p>
 
 <p align="center">
