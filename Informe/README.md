@@ -78,3 +78,7 @@
 
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones:
+* Bootstrap nos permite crear interfaces que son adaptables en tamaño para cualquier dispositivo en la que se vizualice.
+* El uso de un archivo de estilos nos permite que el código HTML no sea tan extenso.
+* Montar un mini servidor web local nos permite ver nuestra pagina HTML desde el localhost.
+* Se recomienda llevar las practicas no tan rápido para mejorar la comprensión por parte de los estudiantes.
