@@ -32,6 +32,18 @@
 
 <a name="Marco Teórico"></a>
 ## Marco Teórico:
+
+### Servidor Web:
+<p align="justify">
+    Un servidor web o servidor HTTP es un programa informático que procesa una aplicación del lado del servidor, realizando conexiones bidireccionales y/o unidireccionales y síncronas o asíncronas con el cliente y generando o cediendo una respuesta en cualquier lenguaje o Aplicación del lado del cliente. El código recibido por el cliente suele ser compilado y ejecutado por un navegador web. Para la transmisión de todos estos datos suele utilizarse algún protocolo. Generalmente se usa el protocolo HTTP para estas comunicaciones, perteneciente a la capa de aplicación del modelo OSI. El término también se emplea para referirse al ordenador que ejecuta el programa. (Fuente: <a href="https://es.wikipedia.org/wiki/Servidor_web">Wikipedia</a>)
+</p>
+
+<p align="center">
+    <img src="http://3con14.info/codigo_web/_config/pagina_web.png?raw=true" width="400" height="200">
+</p>
+
+<br>
+
 ### Hojas de Estilos:
 <p align="justify">
     Las hojas de estilo representan un avance importante para los diseñadores de páginas web, al darles un mayor rango de posibilidades para mejorar la apariencia de sus páginas. En los entornos científicos en que la Web fue concebida, la gente estaba más preocupada por el contenido de sus páginas que por su presentación. A medida que la Web era descubierta por un espectro mayor de personas de distintas procedencias, las limitaciones del HTML se convirtieron en fuente de continua frustración, y los autores se vieron forzados a superar las limitaciones estilísticas del HTML.
@@ -43,14 +55,11 @@
 </p>
 
 <p align="center">
-    <img src="http://3con14.info/codigo_web/_config/pagina_web.png?raw=true" width="400" height="200">
+    <img src="http://www.777icons.com/libs/net/http_server.jpg?raw=true" width="400" height="200">
 </p>
 
 <br>
-### HTML:
-<p align="justify">
-    HTML, sigla en inglés de HyperText Markup Language (lenguaje de marcas de hipertexto), hace referencia al lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado código HTML) para la definición de contenido de una página web, como texto, imágenes, videos, juegos, entre otros. Es un estándar a cargo del World Wide Web Consortium (W3C) o Consorcio WWW, organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, sobre todo en lo referente a su escritura e interpretación. Se considera el lenguaje web más importante siendo su invención crucial en la aparición, desarrollo y expansión de la World Wide Web (WWW). Es el estándar que se ha impuesto en la visualización de páginas web y es el que todos los navegadores actuales han adoptado. (Fuente: <a href="https://es.wikipedia.org/wiki/HTML">Wikipedia</a>)
-</p>
+
 
 <a name="Desarrollo de la Práctica"></a>
 ## Desarrollo de la Práctica:
