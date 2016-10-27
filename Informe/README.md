@@ -39,7 +39,7 @@
 </p>
 
 <p align="center">
-    <img src="http://3con14.info/codigo_web/_config/pagina_web.png?raw=true" width="400" height="200">
+    <img src="http://www.777icons.com/libs/net/http_server.jpg?raw=true" width="400" height="200">
 </p>
 
 <br>
@@ -55,7 +55,7 @@
 </p>
 
 <p align="center">
-    <img src="http://www.777icons.com/libs/net/http_server.jpg?raw=true" width="400" height="200">
+    <img src="http://3con14.info/codigo_web/_config/pagina_web.png?raw=true" width="400" height="200">
 </p>
 
 <br>
