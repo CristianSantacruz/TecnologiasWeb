@@ -111,6 +111,24 @@ html{
 
 ```
 
+* **Bootstrap nos permite visualizar la interfaz de una manera adaptable de acuerdo a su tamaño, a continuación se muestra la página HTML en su tamaño original.**
+<br>
+<p align="center">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/02-CSS/Informe/Graficos/Pagina.png?raw=true" width="700" height="300">
+</p>
+
+* **Al reducir el tamaño de la pantalla se obsrva que la interfaz se adapta al nuevo tamaño.**
+<br>
+<p align="center">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/02-CSS/Informe/Graficos/Pagina.png?raw=true" width="700" height="300">
+</p>
+
+* **Mientras sequimos reduciendo el tamaño de la pantalla la interfaz se sigue adaptando.**
+<br>
+<p align="center">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/02-CSS/Informe/Graficos/Pagina.png?raw=true" width="700" height="300">
+</p>
+
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones:
 * Bootstrap nos permite crear interfaces que son adaptables en tamaño para cualquier dispositivo en la que se vizualice.
