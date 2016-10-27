@@ -91,22 +91,22 @@
 
 ```
 html{
-            background-color: #687fd4;
-            
-        }
+    
+    background-color: #687fd4;
+}
+    
+    body{
         
-        body{
-            
-            background-color: azure;
-        }
+        background-color: azure;
+    }
         
-        h1{
-            background-color: #67327gd;
-        }
-        
-        p{
-            background-color: #12435bgfhb;
-        }
+    h1{
+        background-color: #67327gd;
+    }
+    
+    p{
+        background-color: #12435bgfhb;
+    }
         
 
 ```
