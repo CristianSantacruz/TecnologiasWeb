@@ -111,6 +111,24 @@ html{
 
 ```
 
+* **Con el siguiente código HTML podemos crear tablas que pueden adaptar su tamaño de acuerdo al tamaño de la pantalla.**
+
+```
+<!--            .col-md-4*3>h2     EMMET  -->
+            <h1>Fila1</h1>
+            <!--        md en 890px se hace chiquito-->
+            <div class="col-md-4 borde">
+                <h2>Columna md 4 - 1</h2>
+            </div>
+            <div class="col-md-4 borde">
+                <h2>Columna md 4 - 2</h2>
+            </div>
+            <div class="col-md-4 borde">
+                <h2>Columna md 4 - 3</h2>
+            </div>
+
+```
+
 * **Bootstrap nos permite visualizar la interfaz de una manera adaptable de acuerdo a su tamaño, a continuación se muestra la página HTML en su tamaño original.**
 <br>
 <p align="center">
