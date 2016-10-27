@@ -32,15 +32,19 @@
 
 <a name="Marco Teórico"></a>
 ## Marco Teórico:
-### Definición de WWW:
+### Hojas de Estilos:
 <p align="justify">
-    La triple www son las siglas que identifican a Word Wide Web, expresión inglesa que define a la red global mundial de documentos de hipertexto que se encuentran enlazados entre sí y a la cual se tiene acceso a través del internet. La triple www fue desarrollada para finales de los años 80 por los investigadores Tim Berners Lee y Robert Cailliau.
+    Las hojas de estilo representan un avance importante para los diseñadores de páginas web, al darles un mayor rango de posibilidades para mejorar la apariencia de sus páginas. En los entornos científicos en que la Web fue concebida, la gente estaba más preocupada por el contenido de sus páginas que por su presentación. A medida que la Web era descubierta por un espectro mayor de personas de distintas procedencias, las limitaciones del HTML se convirtieron en fuente de continua frustración, y los autores se vieron forzados a superar las limitaciones estilísticas del HTML.
     
-    Para poder utilizar la www es necesario disponer de un navegador web como por ejemplo: Microsoft Internet Explorer, Mozilla Firefox, etc. La triple www se fundamenta en hipertextos, es decir, páginas en las que se pueden insertar hipervínculos, estos le permiten al usuario poder conducirse de una página a otra de esa web. (Fuente: <a href="http://conceptodefinicion.de/w-w-w/">Conceptodefinicion.de</a>)
+</p>
+
+<palign="justify">
+    Con las hojas de estilo es más fácil especificar la cantidad de espacio entre líneas, el sangrado de las líneas, los colores a utilizar para el texto y el fondo, el tamaño
+     y estilo de las fuentes, y otros muchos detalles. (Fuente: <a href="http://html.conclase.net/w3c/html401-es/present/styles.html#h-14.1">Hojas de Estilo</a>)
 </p>
 
 <p align="center">
-    <img src="http://conceptodefinicion.de/wp-content/uploads/2016/08/www.jpg?raw=true" width="400" height="200">
+    <img src="http://3con14.info/codigo_web/_config/pagina_web.png?raw=true" width="400" height="200">
 </p>
 
 <br>
