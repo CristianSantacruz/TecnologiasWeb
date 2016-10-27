@@ -1,11 +1,11 @@
-# INTRODUCCIÓN A LA WEB
+# MANEJO DE ESTILOS EN HTML
 
 #### Materia: Tecnologías Web con JavaScript
-#### Tema: Introducción a la Web
-#### Fecha: 2016-10-25
+#### Tema: Manejo de Estilos en HTML
+#### Fecha: 2016-11-01
 #### Estudiante: Cristian David Santacruz Guarquila
 #### Profesor: Tania Calle - Adrian Eguez
-#### Número de Informe: 01
+#### Número de Informe: 02
 ---
 
 ## Índice de Contenidos:
