@@ -78,13 +78,13 @@
 * **Levantar el servidor Web**
 <br>
 <p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/02-CSS/Informe/Graficos/Servidor.png?raw=true" width="700" height="200">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/02-CSS/Informe/Graficos/Servidor.png?raw=true" width="500" height="175">
 </p>
 
 * **Visualizar la página desde el localhost.**
 <br>
 <p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/02-CSS/Informe/Graficos/Pagina.png?raw=true" width="700" height="300">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/02-CSS/Informe/Graficos/Pagina.png?raw=true" width="500" height="180">
 </p>
 
 * **La hoja de estilos por lo general se la define con la siguiente estructura de código**
@@ -114,19 +114,19 @@ html{
 * **Bootstrap nos permite visualizar la interfaz de una manera adaptable de acuerdo a su tamaño, a continuación se muestra la página HTML en su tamaño original.**
 <br>
 <p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/02-CSS/Informe/Graficos/Grande.png?raw=true" width="700" height="300">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/02-CSS/Informe/Graficos/Grande.png?raw=true" width="500" height="200">
 </p>
 
 * **Al reducir el tamaño de la pantalla se obsrva que la interfaz se adapta al nuevo tamaño.**
 <br>
 <p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/02-CSS/Informe/Graficos/Mediano.png?raw=true" width="700" height="300">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/02-CSS/Informe/Graficos/Mediano.png?raw=true" width="500" height="200">
 </p>
 
 * **Mientras sequimos reduciendo el tamaño de la pantalla la interfaz se sigue adaptando.**
 <br>
 <p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/02-CSS/Informe/Graficos/Peque%C3%B1o.png?raw=true" width="700" height="300">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/02-CSS/Informe/Graficos/Peque%C3%B1o.png?raw=true" width="500" height="200">
 </p>
 
 <a name="Conclusiones y Recomendaciones"></a>
