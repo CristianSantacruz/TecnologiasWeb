@@ -27,6 +27,7 @@
 * Aprender a crear clases dentro del documento HTML.
 * Aprender el uso de estilos en HTML.
 * Aprender a levantar un mini Servidor Web.
+* Aprender el uso de Bootstrap.
 
 ---
 
@@ -50,12 +51,23 @@
     
 </p>
 
-<palign="justify">
+<p align="justify">
     Con las hojas de estilo es más fácil especificar la cantidad de espacio entre líneas, el sangrado de las líneas, los colores a utilizar para el texto y el fondo, el tamaño y estilo de las fuentes, y otros muchos detalles. (Fuente: <a href="http://html.conclase.net/w3c/html401-es/present/styles.html#h-14.1">Hojas de Estilo</a>)
 </p>
 
 <p align="center">
     <img src="http://3con14.info/codigo_web/_config/pagina_web.png?raw=true" width="400" height="200">
+</p>
+
+<br>
+
+### Bootstrap:
+<p align="justify">
+    Bootstrap, es un framework originalmente creado por Twitter, que permite crear interfaces web con CSS y JavaScript, cuya particularidad es la de adaptar la interfaz del sitio web al tamaño del dispositivo en que se visualice. Es decir, el sitio web se adapta automáticamente al tamaño de una PC, una Tablet u otro dispositivo. Esta técnica de diseño y desarrollo se conoce como “responsive design” o diseño adaptativo. (Fuente: <a href="http://www.arweb.com/chucherias/editorial/%C2%BFque-es-bootstrap-y-como-funciona-en-el-diseno-web.htm">ARWEB</a>)
+</p>
+
+<p align="center">
+    <img src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/courses/3325491/14570025107476_illus_prenez-en-main-bootstrap.png?raw=true" width="400" height="200">
 </p>
 
 <br>
