@@ -75,6 +75,9 @@
 
 <a name="Desarrollo de la Práctica"></a>
 ## Desarrollo de la Práctica:
+* **Levantar el servidor Web y visualizar la página desde el localhost.**
+<br>
+
 
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones:
