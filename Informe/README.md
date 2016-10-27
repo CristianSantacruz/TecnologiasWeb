@@ -75,8 +75,17 @@
 
 <a name="Desarrollo de la Práctica"></a>
 ## Desarrollo de la Práctica:
-* **Levantar el servidor Web y visualizar la página desde el localhost.**
+* **Levantar el servidor Web**
 <br>
+<p align="center">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/02-CSS/Informe/Graficos/Servidor.png?raw=true" width="700" height="200">
+</p>
+
+* **Visualizar la página desde el localhost.**
+<br>
+<p align="center">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/02-CSS/Informe/Graficos/Pagina.png?raw=true" width="700" height="300">
+</p>
 
 
 <a name="Conclusiones y Recomendaciones"></a>
