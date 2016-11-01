@@ -50,8 +50,8 @@
         var cristian = {
             'nombre':'Cristian', 'apellido':'Santacruz', edad:25, mascota:['perro', 'gato'],
             hermanos:[{nombre:'Paul', apellido:'Santacruz'},{nombre:'John', apellido:'Santacruz'}], getNombre:function(){
-            return cristian.nombre
-        }        }
+            return cristian.nombre}, getApellido:function(){return cristian.apellido}        
+        }
         console.log('Acceder al nombre');
         console.log(cristian.nombre);
         
@@ -66,6 +66,7 @@
         }
         console.log(getNombreCristian());
         console.log(cristian.getNombre());
+        console.log(cristian.getApellido());
         
     </script>
 </head>
