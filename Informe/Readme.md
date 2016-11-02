@@ -153,6 +153,10 @@ Ejemplo
 ```
 
 <p align="center">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/boostrap/Informe/Capturas/VentGrande.png?raw=true">
+</p>
+
+<p align="center">
     <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/boostrap/Informe/Capturas/VentanaPeque%C3%B1a.png?raw=true">
 </p>
 
