@@ -105,6 +105,29 @@ Ejemplo
     <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/boostrap/Informe/Capturas/Forms.png?raw=true">
 </p>
 
+* **El tag ```<kdb> ... </kdb>``` nos permite dar un formato al texto.**
+
+```
+<p>No esta permitido por ejemplo el
+        <kbd>
+        <kbd>ctrl</kbd> +
+        <kbd>c</kbd>
+        </kbd>
+        ni el
+        <kbd>
+    <kbd>ctrl</kbd> +
+        <kbd>v</kbd>
+        </kbd>
+    </p>
+
+```
+
+Ejemplo
+
+<p align="center">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/boostrap/Informe/Capturas/Inputs.png?raw=true">
+</p>
+
 * **Con el siguiente código podemos crar una tabla que se hace más pequeña cuando llega a los 690px**
 
 ```
@@ -131,37 +154,6 @@ Ejemplo
 
 <p align="center">
     <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/boostrap/Informe/Capturas/VentanaPeque%C3%B1a.png?raw=true">
-</p>
-
-* **Los TAGS ```<p> ... </p>``` nos permiten crear p+arrafos en el documento HTML.**
-
-<p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Parrafo.png?raw=true" height="150">
-</p>
-
-* **Los TAGS ```<!-- ... -->``` nos permiten comentar bloques de código en el documento HTML.**
-
-<p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Comentarios.png?raw=true">
-</p>
-
-* **Se puede crear imagenes que nos redireccione a otras páginas Web:**
-
-```
-<a href="https://es.wikipedia.org/wiki/Saint_Seiya" target="blank">
-        <img src="http://www.gratistodo.com/contenido/videos-gratis/series-de-tv/caballeros-del-zodiaco.jpg">
-    </a>
-    
-```
-<br>
-<p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Imagenes.Enlaces.png?raw=true">
-</p>
-
-Despúes de dar click en esta imagen nos redirecciona a la siguiente página Web.
-
-<p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Redireccion.png?raw=true">
 </p>
 
 <a name="Conclusiones y Recomendaciones"></a>
