@@ -39,17 +39,24 @@
 </p>
 
 <p align="center">
-    <img src="http://michelletorres.mx/wp-content/uploads/2015/02/bootstrap.jpg?raw=true" width="400" height="200">
+    <img src="http://michelletorres.mx/wp-content/uploads/2015/02/bootstrap.jpg" width="300" height="200">
 </p>
 
 <br>
-### HTML:
+### Introducción a la Accesibilidad Web (WAI):
 <p align="justify">
-    HTML, sigla en inglés de HyperText Markup Language (lenguaje de marcas de hipertexto), hace referencia al lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado código HTML) para la definición de contenido de una página web, como texto, imágenes, videos, juegos, entre otros. Es un estándar a cargo del World Wide Web Consortium (W3C) o Consorcio WWW, organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, sobre todo en lo referente a su escritura e interpretación. Se considera el lenguaje web más importante siendo su invención crucial en la aparición, desarrollo y expansión de la World Wide Web (WWW). Es el estándar que se ha impuesto en la visualización de páginas web y es el que todos los navegadores actuales han adoptado. (Fuente: <a href="https://es.wikipedia.org/wiki/HTML">Wikipedia</a>)
-</p>
+    La accesibilidad Web significa que personas con algún tipo de discapacidad van a poder hacer uso de la Web. En concreto, al hablar de accesibilidad Web se está haciendo referencia a un diseño Web que va a permitir que estas personas puedan percibir, entender, navegar e interactuar con la Web, aportando a su vez contenidos. La accesibilidad Web también beneficia a otras personas, incluyendo personas de edad avanzada que han visto mermadas sus habilidad a consecuencia de la edad.</p>
+<br>
+<p align="justify">
+    La accesibilidad Web engloba muchos tipos de discapacidades, incluyendo problemas visuales, auditivos, físicos, cognitivos, neurológicos y del habla.</p>
+<p align="justify">
+    Existen millones de personas con discapacidad que no pueden utilizar la Web. Actualmente, la mayoría de los sitios Web y los software Web presentan barreras de accesibilidad, lo que dificulta o imposibilita la utilización de la Web para muchas personas con discapacidad. Cuanto más software y sitios Web accesibles estén disponibles, más personas con discapacidad podrán utilizar la Web y contribuir de forma más eficiente.</p>
+<br>
+<p align="justify">
+    Pero la accesibilidad Web beneficia también a organizaciones y a personas sin discapacidad. Por ejemplo, un principio básico de la accesibilidad Web es la flexibilidad con el objetivo de satisfacer diferentes necesidades, situaciones y preferencias. Esta flexibilidad va a beneficiar a todas aquellas personas que utilizan la Web, incluyendo personas que no tienen ninguna discapacidad pero que, debido a determinadas situaciones, tienen dificultades para acceder a la Web. (Fuente: <a href="http://www.w3c.es/Traducciones/es/WAI/intro/accessibility">Web Accesibility</a>)</p>
 
 <p align="center">
-    <img src="https://nanysman.files.wordpress.com/2012/11/html1.png" width="180" height="200">
+    <img src="http://www.misnet.co.uk/images/website-accessibility.jpg" width="180" height="200" "http://www.w3.org/2014/Talks/chairs-part4/disability-symbols.png" width="180" height="200">
 </p>
 
 <br>
