@@ -160,6 +160,55 @@ Ejemplo
     <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/boostrap/Informe/Capturas/VentanaPeque%C3%B1a.png?raw=true">
 </p>
 
+* **Con el siguiente código podemos crear tablas que sus filas se coloreen de acuerdo a una alerta**
+
+```
+<table class="table table-condensed ">
+        <!--   TABLE ROW    -->
+        <tr class="active">
+            <!--   TABLE HEADER    -->
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <!--   TABLE ROW    -->
+        <tr class="warning">
+            <!--   TABLE DETAIL    -->
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <!--   TABLE ROW    -->
+        <tr class="success">
+            <!--   TABLE DETAIL    -->
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <!--   TABLE ROW    -->
+        <tr class="info">
+            <!--   TABLE DETAIL    -->
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <!--   TABLE ROW    -->
+        <tr class="danger">
+            <!--   TABLE DETAIL    -->
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+</table>
+    
+```
+
+Ejemplo
+
+<p align="center">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/boostrap/Informe/Capturas/TablaAlertas.png?raw=true">
+</p>
+
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones:
 * WAI permite desarrollar aplicaciones Web para que puedan ser utilizadas por personas que tengan algún tipo de discapacidad o que recien esten introduciendose al uso de aplicaciones Web.
