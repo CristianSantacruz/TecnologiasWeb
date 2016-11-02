@@ -105,16 +105,38 @@ Ejemplo
     <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/boostrap/Informe/Capturas/Forms.png?raw=true">
 </p>
 
-* **Los TAGS ```<h1> a <h6>``` nos permiten poner encabezados al documento HTML.**
+* **Con el siguiente código podemos crar una tabla que se hace más pequeña cuando llega a los 690px**
+
+```
+<div class="row" style="background-color:#7979f3;">
+
+            <h1>Fila2</h1>
+
+            <div class="col-sm-3 borde">
+                <h3>CSM3 - 1</h3>
+            </div>
+            <div class="col-sm-3 borde">
+                <h3>CSM2 - 2</h3>
+            </div>
+            <div class="col-sm-3 borde">
+                <h3>CSM2 - 3</h3>
+            </div>
+            <div class="col-sm-3 borde">
+                <h3>CSM2 - 4</h3>
+            </div>
+
+        </div>
+
+```
 
 <p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Cabeceras.png?raw=true">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/boostrap/Informe/Capturas/VentanaPeque%C3%B1a.png?raw=true">
 </p>
 
 * **Los TAGS ```<p> ... </p>``` nos permiten crear p+arrafos en el documento HTML.**
 
 <p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Parrafo.png?raw=true">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Parrafo.png?raw=true" height="150">
 </p>
 
 * **Los TAGS ```<!-- ... -->``` nos permiten comentar bloques de código en el documento HTML.**
