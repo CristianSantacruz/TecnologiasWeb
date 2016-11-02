@@ -1,4 +1,4 @@
-# Diseño, Calidad, WAI, Validación, Seo
+# Diseño, Calidad, WAI, Validación, SEO
 
 #### Materia: Tecnologías Web con JavaScript
 #### Tema: Introducción a la Web
