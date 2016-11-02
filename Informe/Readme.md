@@ -72,16 +72,6 @@ En otras palabras, “hacer SEO” consiste en utilizar diferentes técnicas par
 </p>
 
 <br>
-### W3C:
-<p align="justify">
-    W3C son las siglas de World Wide Web Consortium , y es una comunidad internacional donde los estados miembros trabajan para poder desarrollar estándares para el desarrollo web y asi ayudar a un mejor desarrollo de el Internet a nivel mundial.
-W3C es reconocido a nivel mundial por ser la organización encargada de estandarizar El Lenguaje de Marcado de Hipertexto o mejor conocido como HTML , el cual es utilizado para el diseño y desarrollo de sitios web, dicho estándar inicio en el año de 1994 (es importante aclarar que antes de que W3C trabajara en HTML ya otras organizaciones habían desarrollado versiones previas).
-Sin embargo los objetivos de W3C van mas allá de el desarrollo de HTML y trabajan en otros proyectos a fin de poder brindar nuevas opciones para la elaboración de sitios web, tanto es así que en los últimos años han concentrados sus esfuerzo en el desarrollo de XHTML, una versión avanzada de HTML que pretende en los próximos años sustituirlo. (Fuente: <a href="http://sistemasyinternet.blogspot.com/2011/06/que-es-w3c.html">Mundo Informático</a>)
-</p>
-<p align="center">
-    <img src="http://2.bp.blogspot.com/-epjQpzrzca0/TewLvVF_ByI/AAAAAAAAAN8/gS4uaslEWfY/s1600/logo_w3c.jpg?raw=true" width="400" height="180">
-</p>
-
 <a name="Desarrollo de la Práctica"></a>
 ## Desarrollo de la Práctica:
 * **Postman es una herramienta que nos permite revisar los códigos de estatutos de HTML.**
