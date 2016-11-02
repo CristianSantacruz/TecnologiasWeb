@@ -60,27 +60,16 @@
 </p>
 
 <br>
-### Algunos Elementos de HTML:
-```
-<!DOCTYPE>      --> Define el tipo de Documento
-<html>          --> Define un Documento HTML
-<title>         --> Define un título para el Documento
-<body>          --> Define el cuerpo del Documento
-<h1> a <h6>     --> Define los encabezados HTML
-<p>             --> Define un párrafo
-<br>            --> Inserta una línea en blanco
-<!-- ... -->    --> Define un comentario
-<table>         --> Tabla
-<img>           --> Define una inagen
-<ol>            --> Define una lista ordenada
-<ul>            --> Define una lista desordenada
-<li>            --> Define un ítem de una lista
-<link>          --> Define información relacional para el Documento
-<a>             --> Define un hipervínculo
-<video>         --> Video
-<audio>         --> Audio
-```
-(Fuente: <a href="http://www.htmlquick.com/es/reference/tags.html">Tutoriales y Referencias sobre HTML</a>)
+### Search Engine Optimization (SEO):
+<p align="justify">
+    Search Engine Optimization (SEO o posicionamiento SEO en Google) no es otra cosa que la manera de lograr que tus productos, tus servicios o tu marca gane en posicionamiento natural orgánico en los buscadores (no en los espacios de pago por publicidad), algo que se consigue utilizando contenido relevante para atraer a los visitantes hacia tu blog.</p>
+<br>
+<p align="justify">
+En otras palabras, “hacer SEO” consiste en utilizar diferentes técnicas para conseguir que tu página web, blog, artículo, página de venta, artículo de e-commerce o lo que sea aparezca lo más arriba posible en los resultados orgánicos.(Fuente: <a href="https://www.lifestylealcuadrado.com/guia-seo-principiantes/">LIFESTYLE AL CUADRADO</a>)</p>
+
+<p align="center">
+    <img src="http://blogs.cincodias.com/.a/6a00d8341c760153ef01a73dd3851b970d-pi" width="250" height="200">
+</p>
 
 <br>
 ### W3C:
