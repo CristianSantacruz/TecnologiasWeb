@@ -1,4 +1,4 @@
-# Diseño, calidad, WAI, Validación, Seo
+# Diseño, Calidad, WAI, Validación, Seo
 
 #### Materia: Tecnologías Web con JavaScript
 #### Tema: Introducción a la Web
@@ -129,7 +129,7 @@ Despúes de dar click en esta imagen nos redirecciona a la siguiente página Web
 
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones:
-* Al igual que otros lenguajes de programación HTML tamnbién nos permite comentar bloques de código.
-* HTML nos permite usar estilos para mejorar la presentación de las paginas Web.
-* Mediante una imagen en el documento HTML podemos redireccionarnos a otra pagina Web.
+* WAI permite desarrollar aplicaciones Web para que puedan ser utilizadas por personas que tengan algún tipo de discapacidad o que recien esten introduciendose al uso de aplicaciones Web.
+* SEO son técnicas que permiten posicionar nuestras marcas o productos en lo más arriba posible de los resultados de Google de manera gratuita.
+* Bootstrap nos permiten mejorar el diseño de nuestra página Web.
 * Se recomienda realizar las prácticas con mayor detenimiento y no ir tan rápido.
