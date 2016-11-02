@@ -99,7 +99,7 @@ En otras palabras, “hacer SEO” consiste en utilizar diferentes técnicas par
     </div>
     
 ```
-
+<br>
 ** Ejemplo**
 <p align="center">
     <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/boostrap/Informe/Capturas/Forms.png?raw=true">
