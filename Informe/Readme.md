@@ -39,7 +39,7 @@
 </p>
 
 <p align="center">
-    <img src="http://michelletorres.mx/wp-content/uploads/2015/02/bootstrap.jpg" width="300" height="200">
+    <img src="http://michelletorres.mx/wp-content/uploads/2015/02/bootstrap.jpg" width="200" height="150">
 </p>
 
 <br>
@@ -56,7 +56,7 @@
     Pero la accesibilidad Web beneficia también a organizaciones y a personas sin discapacidad. Por ejemplo, un principio básico de la accesibilidad Web es la flexibilidad con el objetivo de satisfacer diferentes necesidades, situaciones y preferencias. Esta flexibilidad va a beneficiar a todas aquellas personas que utilizan la Web, incluyendo personas que no tienen ninguna discapacidad pero que, debido a determinadas situaciones, tienen dificultades para acceder a la Web. (Fuente: <a href="http://www.w3c.es/Traducciones/es/WAI/intro/accessibility">Web Accesibility</a>)</p>
 
 <p align="center">
-    <img src="http://www.misnet.co.uk/images/website-accessibility.jpg" width="180" height="200">
+    <img src="http://www.misnet.co.uk/images/website-accessibility.jpg" width="250" height="200">
 </p>
 
 <br>
