@@ -74,10 +74,34 @@ En otras palabras, “hacer SEO” consiste en utilizar diferentes técnicas par
 <br>
 <a name="Desarrollo de la Práctica"></a>
 ## Desarrollo de la Práctica:
-* **Postman es una herramienta que nos permite revisar los códigos de estatutos de HTML.**
+* **Con el siguiente código podemos crear un formulario en un documento HTML.**
 
+```
+<div class="container">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">yo</div>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            <div class="input-group-addon">aq</div>
+                        </div>
+                        
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+    
+```
+** Ejemplo**
 <p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Postman.png?raw=true">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/boostrap/Informe/Capturas/Forms.png?raw=true">
 </p>
 
 * **Los TAGS ```<h1> a <h6>``` nos permiten poner encabezados al documento HTML.**
