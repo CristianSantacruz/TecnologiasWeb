@@ -74,6 +74,25 @@
         console.log(AdventureSelector(2)());
         console.log(AdventureSelector(3)());
         
+        
+        var puzzlers = [function(a){return 8*a-10;},
+                        function(a){return (a-3)*(a-3)*(a-3);},
+                        function(a){return a*a+4;},
+                        function(a){return a%5;}]
+        var start = 2;
+        
+        var applyAndEmpty = function(input,queue){
+            var resultado;
+            for(var i=0; i<queue.length; i++){
+                input = queue[i](input);
+                queue.splice(0,1);
+            }
+            console.log(queue);
+            return input;
+        }
+        
+        console.log(applyAndEmpty(start, puzzlers));
+        
     </script>
 </head>
 
