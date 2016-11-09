@@ -45,6 +45,35 @@
         console.log(puzzlers[2](5));
         console.log(puzzlers[3](5));
         
+        
+        function AdventureSelector(userChoise){
+            
+            if(userChoise==1){
+                return function(){
+                    alert('Doom');
+                }
+            }
+            
+            
+            if(userChoise==2){
+                return function(){
+                    alert('Lake of Despair');
+                }
+            }
+            
+            
+            if(userChoise==3){
+                return function(){
+                    alert('Caves of Catastrophe');
+                }
+            }
+            
+        }
+        
+        console.log(AdventureSelector(1));
+        console.log(AdventureSelector(2));
+        console.log(AdventureSelector(3));
+        
     </script>
 </head>
 
