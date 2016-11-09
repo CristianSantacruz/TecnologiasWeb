@@ -83,8 +83,9 @@
         
         var applyAndEmpty = function(input,queue){
             var resultado;
-            for(var i=0; i<queue.length; i++){
-                input = queue[i](input);
+            var longitud = queue.length
+            for(var i=0; i<longitud; i++){
+                input = queue[0](input);
                 queue.splice(0,1);
             }
             console.log(queue);
