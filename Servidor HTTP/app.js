@@ -12,7 +12,21 @@ app.get('/TecnologiasWeb', function (req, res) {
 
 
 app.post('/TecnologiasWeb', function (req, res) {
-  res.send('con JavaScript');
+  
+    console.log('Lo que tengo en el request es:');
+    console.log(req);
+    
+    console.log('Lo que tengo en el responsive es:');
+    console.log(res);
+    
+    console.log('Lo en la cabecera request es:');
+    console.log(req.getHeaders);
+    
+    console.log('Lo en la cabecera responsive es:');
+    console.log(res.getHeaders);
+    
+    
+    res.send('con JavaScript');
 });
 
 
