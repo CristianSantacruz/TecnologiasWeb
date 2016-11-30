@@ -1,11 +1,10 @@
 var express = require('express');
 var app = express();
 
+var usuarios = [{ id:1, nombre: 'Pepe', cedula: '12345' },
+                { id:2, nombre: 'Juan', cedula: '12345'},    
+                { id:3, nombre: 'Pedro', cedula: '12345'}]
 
-var usuario = {
-    nombre:'Cristian',
-    cedula:'1234567890'
-}
 
 app.get('/', function (req, res) {
   res.send('Hola Mundo');
@@ -13,30 +12,21 @@ app.get('/', function (req, res) {
 
 
 app.get('/TecnologiasWeb', function (req, res) {
-  res.send('con JavaScript');
+  res.send(usuarios);
 });
 
 
-app.post('/TecnologiasWeb', function (req, res) {
-  
-    console.log('Lo que tengo en el request es:');
-   // console.log(req);
+app.post('/TecnologiasWeb/:name', function (req, res) {
     
-    console.log('Lo que tengo en el responsive es:');
-   // console.log(res);
+    var parametros = req.params.name;
+    for(var i=0; i<usuarios.length; i++){
+        if(parametros==usuarios[i].id){
+            res.json(usuarios[i]);
+        }
+    } 
     
-    console.log('Lo en la cabecera request es:');
-   // console.log(req.getHeaders);
-    
-    console.log('Lo en la cabecera responsive es:');
-   // console.log(res.getHeaders);
-    
-    
-    //res.send('con JavaScript');
-    res.json(usuario);
+    res.send('No existe el Usuario');
 });
-
-
 
 app.listen(5050, function () {
   console.log('Escuchando en puerto5050');
