@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
     
     //Primer paramatro es el path de la pagina html y el segundo parametro es la codificación
     fs.readFile ('./Paginas/pagina.html', 'utf8', function(err, archivoLeido){ 
-        fs.readFile ('./Paginas/pagina.html', 'utf8', function(err, archivoLeido){ }); });
+        fs.readFile ('./Paginas/usuario.html', 'utf8', function(err, archivoLeido){ }); });
     
     
     
