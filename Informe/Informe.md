@@ -71,20 +71,15 @@
 <p align="center">
     <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/08-ExpressJS-Parte-2/Informe/Imagenes/Direcctorio%20de%20la%20aplicaci%C3%B3n.png?raw=true?raw=true">
 </p>
-
+<br>
 * **Ejecutar el comando ```$npm init``` para crear un archivo package.json.**
+<br>
 * **Pulsar Enter hasta llegar a ```entry point: (index.js)``` y lo cambiamos por ```entry point: (app.js)``` ya que la aplicación será codificada en el archivo "app.js" .**
 
 ```
     entry point: (app.js)
 ```
-
-Ejemplo
-
-<p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/boostrap/Informe/Capturas/Inputs.png?raw=true">
-</p>
-
+<br>
 * **Con el siguiente código podemos crar una tabla que se hace más pequeña cuando llega a los 690px**
 
 ```
