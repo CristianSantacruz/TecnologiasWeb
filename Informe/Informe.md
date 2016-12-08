@@ -97,9 +97,18 @@
 
 * **Después de crear el ambiente de trabajo se procede a crear la aplicación editando el archivo ```app.js```.**
 
-<p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/08-ExpressJS-Parte-2/Informe/Imagenes/package.png?raw=true?raw=true?raw=true">
-</p>
+* **Crear un ```Hola Mundo```.**
+
+```javascript
+    var express = require('express');
+    app.get('/', function (req, res) {
+    res.send('Hola Mundo');
+    });
+
+    app.listen(5050, function () {
+    console.log('Escuchando en puerto5050');
+    });
+```
 
 
 <a name="Conclusiones y Recomendaciones"></a>
