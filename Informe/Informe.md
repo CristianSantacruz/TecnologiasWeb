@@ -105,6 +105,6 @@
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones:
 * NPM sirve para menejar paquetes de node.js.
-* NPM sirve para menejar paquetes de node.js.
 * Para crear el entorno de trabajo de la aplicación express se debe instalar Express en el directorio que contendrá a la aplicación.
 * Cada que se modifique la aplicación se debe bajar el servidor y volverlo a subir para visualizar las nuevas funciones.
+* Se recomienda llevar las clases con mayor detenimiento,
