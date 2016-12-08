@@ -53,35 +53,17 @@
 </p>
 
 <br>
-### Introducción a la Accesibilidad Web (WAI):
+### Express:
 <p align="justify">
-    La accesibilidad Web significa que personas con algún tipo de discapacidad van a poder hacer uso de la Web. En concreto, al hablar de accesibilidad Web se está haciendo referencia a un diseño Web que va a permitir que estas personas puedan percibir, entender, navegar e interactuar con la Web, aportando a su vez contenidos. La accesibilidad Web también beneficia a otras personas, incluyendo personas de edad avanzada que han visto mermadas sus habilidad a consecuencia de la edad.</p>
-
-<p align="justify">
-    La accesibilidad Web engloba muchos tipos de discapacidades, incluyendo problemas visuales, auditivos, físicos, cognitivos, neurológicos y del habla.</p>
-<p align="justify">
-    Existen millones de personas con discapacidad que no pueden utilizar la Web. Actualmente, la mayoría de los sitios Web y los software Web presentan barreras de accesibilidad, lo que dificulta o imposibilita la utilización de la Web para muchas personas con discapacidad. Cuanto más software y sitios Web accesibles estén disponibles, más personas con discapacidad podrán utilizar la Web y contribuir de forma más eficiente.</p>
-
-<p align="justify">
-    Pero la accesibilidad Web beneficia también a organizaciones y a personas sin discapacidad. Por ejemplo, un principio básico de la accesibilidad Web es la flexibilidad con el objetivo de satisfacer diferentes necesidades, situaciones y preferencias. Esta flexibilidad va a beneficiar a todas aquellas personas que utilizan la Web, incluyendo personas que no tienen ninguna discapacidad pero que, debido a determinadas situaciones, tienen dificultades para acceder a la Web. (Fuente: <a href="http://www.w3c.es/Traducciones/es/WAI/intro/accessibility">Web Accesibility</a>)</p>
+    Express es una infraestructura de aplicaciones web Node.js mínima y flexible que proporciona un conjunto sólido de características para las aplicaciones web y móviles. (Fuente: <a href="http://expressjs.com/es/">Express</a>)
+</p>
 
 <p align="center">
-    <img src="http://www.misnet.co.uk/images/website-accessibility.jpg" width="250" height="200">
+    <img src="https://raygun.com/blog/wp-content/uploads/2015/04/express1.png" width="400" height="150">
 </p>
 
 <br>
-### Search Engine Optimization (SEO):
-<p align="justify">
-    Search Engine Optimization (SEO o posicionamiento SEO en Google) no es otra cosa que la manera de lograr que tus productos, tus servicios o tu marca gane en posicionamiento natural orgánico en los buscadores (no en los espacios de pago por publicidad), algo que se consigue utilizando contenido relevante para atraer a los visitantes hacia tu blog.</p>
 
-<p align="justify">
-En otras palabras, “hacer SEO” consiste en utilizar diferentes técnicas para conseguir que tu página web, blog, artículo, página de venta, artículo de e-commerce o lo que sea aparezca lo más arriba posible en los resultados orgánicos.(Fuente: <a href="https://www.lifestylealcuadrado.com/guia-seo-principiantes/">LIFESTYLE AL CUADRADO</a>)</p>
-
-<p align="center">
-    <img src="http://blogs.cincodias.com/.a/6a00d8341c760153ef01a73dd3851b970d-pi" width="250" height="200">
-</p>
-
-<br>
 <a name="Desarrollo de la Práctica"></a>
 ## Desarrollo de la Práctica:
 * **Con el siguiente código podemos crear un formulario en un documento HTML.**
