@@ -110,6 +110,30 @@
     });
 ```
 
+* **Crear una aplicación que reciba el parámetro ```name```.**
+
+```javascript
+    var express = require('express');
+    var app = express();
+
+    app.post('/TecnologiasWeb/:name', function (req, res) {
+    
+    var parametros = req.params.name;
+    for(var i=0; i<usuarios.length; i++){
+        if(parametros==usuarios[i].id){
+            res.json(usuarios[i]);
+        }
+    } 
+    
+    res.send('No existe el Usuario');
+    });
+
+
+    app.listen(5050, function () {
+    console.log('Escuchando en puerto5050');
+    });
+```
+
 
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones:
