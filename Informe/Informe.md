@@ -115,6 +115,10 @@
 ```javascript
     var express = require('express');
     var app = express();
+    
+    var usuarios = [{ id:1, nombre: 'Pepe', cedula: '12345' },
+                    { id:2, nombre: 'Juan', cedula: '12345'},    
+                    { id:3, nombre: 'Pedro', cedula: '12345'}];
 
     app.post('/TecnologiasWeb/:name', function (req, res) {
     
@@ -132,6 +136,41 @@
     app.listen(5050, function () {
     console.log('Escuchando en puerto5050');
     });
+```
+
+* **Crear una aplicación que inserte nuevos datos.**
+
+```javascript
+    var express = require('express');
+    var app = express();
+
+    var usuarios = [{ id:1, nombre: 'Pepe', cedula: '12345' },
+                    { id:2, nombre: 'Juan', cedula: '12345'},    
+                    { id:3, nombre: 'Pedro', cedula: '12345'}];
+
+    var contador = 3;
+
+
+    app.get('/Usuarios', function (req, res) {
+  
+        if(!req.query.nombre){
+        res.send('No envió nombre');
+    }
+    
+        if(!req.query.cedula){
+        res.send('No envió cédula');
+    }
+    
+    var nuevoUsuario = { id:contador+1, nombre:req.query.nombre, cedula:req.query.cedula };
+    usuarios.push(nuevoUsuario);
+    contador = contador++;
+    res.json(nuevoUsuario);
+    
+    });
+
+    app.listen(5050, function () {
+    console.log('Escuchando en puerto5050');
+  });
 ```
 
 
