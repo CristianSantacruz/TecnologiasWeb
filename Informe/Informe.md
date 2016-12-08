@@ -71,95 +71,20 @@
 <p align="center">
     <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/08-ExpressJS-Parte-2/Informe/Imagenes/Direcctorio%20de%20la%20aplicaci%C3%B3n.png?raw=true?raw=true">
 </p>
-<br>
+
 * **Ejecutar el comando ```$npm init``` para crear un archivo package.json.**
-<br>
+
 * **Pulsar Enter hasta llegar a ```entry point: (index.js)``` y lo cambiamos por ```entry point: (app.js)``` ya que la aplicación será codificada en el archivo "app.js" .**
 
 ```
     entry point: (app.js)
 ```
-<br>
-* **Con el siguiente código podemos crar una tabla que se hace más pequeña cuando llega a los 690px**
 
+* **Instalar Express en el directorio donde se encuentra el archivo principal ```app.js``` y se lo guarda en lista de dependencias con el siguiente comando.**
 ```
-<div class="row" style="background-color:#7979f3;">
-
-            <h1>Fila2</h1>
-
-            <div class="col-sm-3 borde">
-                <h3>CSM3 - 1</h3>
-            </div>
-            <div class="col-sm-3 borde">
-                <h3>CSM2 - 2</h3>
-            </div>
-            <div class="col-sm-3 borde">
-                <h3>CSM2 - 3</h3>
-            </div>
-            <div class="col-sm-3 borde">
-                <h3>CSM2 - 4</h3>
-            </div>
-
-        </div>
-
+    $npm install express --save
 ```
 
-<p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/boostrap/Informe/Capturas/VentGrande.png?raw=true">
-</p>
-
-<p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/boostrap/Informe/Capturas/VentanaPeque%C3%B1a.png?raw=true">
-</p>
-
-* **Con el siguiente código podemos crear tablas que sus filas se coloreen de acuerdo a una alerta**
-
-```
-<table class="table table-condensed ">
-        <!--   TABLE ROW    -->
-        <tr class="active">
-            <!--   TABLE HEADER    -->
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Country</th>
-        </tr>
-        <!--   TABLE ROW    -->
-        <tr class="warning">
-            <!--   TABLE DETAIL    -->
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-        </tr>
-        <!--   TABLE ROW    -->
-        <tr class="success">
-            <!--   TABLE DETAIL    -->
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-        </tr>
-        <!--   TABLE ROW    -->
-        <tr class="info">
-            <!--   TABLE DETAIL    -->
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-        </tr>
-        <!--   TABLE ROW    -->
-        <tr class="danger">
-            <!--   TABLE DETAIL    -->
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-        </tr>
-</table>
-    
-```
-
-Ejemplo
-
-<p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/boostrap/Informe/Capturas/TablaAlertas.png?raw=true">
-</p>
 
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones:
