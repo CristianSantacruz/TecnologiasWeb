@@ -23,11 +23,9 @@
 
 <a name="Objetivos"></a>
 ## Objetivos:
-* Conocer conceptos básicos sobre la Web.
-* Aprender la estructura básica de una página HTML.
-* Aprender el uso de estilos en HTML.
-* Conocer herramientas de desarrolleres Web.
-* Analizar la cabecera de una página HTML.
+* Conocer acerca de NPM.
+* Configurar un entorno de trabajo para desarrollar aplicaciones Express.
+* Crear un aplicación Express.
 
 ---
 
@@ -106,7 +104,7 @@
 
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones:
-* WAI permite desarrollar aplicaciones Web para que puedan ser utilizadas por personas que tengan algún tipo de discapacidad o que recien esten introduciendose al uso de aplicaciones Web.
-* SEO son técnicas que permiten posicionar nuestras marcas o productos en lo más arriba posible de los resultados de Google de manera gratuita.
-* Bootstrap nos permiten mejorar el diseño de nuestra página Web.
-* Se recomienda realizar las prácticas con mayor detenimiento y no ir tan rápido.
+* NPM sirve para menejar paquetes de node.js.
+* NPM sirve para menejar paquetes de node.js.
+* Para crear el entorno de trabajo de la aplicación express se debe instalar Express en el directorio que contendrá a la aplicación.
+* Cada que se modifique la aplicación se debe bajar el servidor y volverlo a subir para visualizar las nuevas funciones.
