@@ -66,52 +66,17 @@
 
 <a name="Desarrollo de la Práctica"></a>
 ## Desarrollo de la Práctica:
-* **Con el siguiente código podemos crear un formulario en un documento HTML.**
+* **Después de instalar node.js se debe crear un directorio el cual contendrá la aplicación y lo convertimos en un directorio de trabajo.**
 
-```
-<div class="container">
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6">
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <div class="input-group">
-                            <div class="input-group-addon">yo</div>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                            <div class="input-group-addon">aq</div>
-                        </div>
-                        
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
-            </div>
-            <div class="col-sm-3"></div>
-        </div>
-    </div>
-    
-```
-
-Ejemplo
 <p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/boostrap/Informe/Capturas/Forms.png?raw=true">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/08-ExpressJS-Parte-2/Informe/Imagenes/Direcctorio%20de%20la%20aplicaci%C3%B3n.png?raw=true?raw=true">
 </p>
 
-* **El tag ```<kdb> ... </kdb>``` nos permite dar un formato al texto.**
+* **Ejecutar el comando ```$npm init``` para crear un archivo package.json.**
+* **Pulsar Enter hasta llegar a ```entry point: (index.js)``` y lo cambiamos por ```entry point: (app.js)``` ya que la aplicación será codificada en el archivo "app.js" .**
 
 ```
-<p>No esta permitido por ejemplo el
-        <kbd>
-        <kbd>ctrl</kbd> +
-        <kbd>c</kbd>
-        </kbd>
-        ni el
-        <kbd>
-    <kbd>ctrl</kbd> +
-        <kbd>v</kbd>
-        </kbd>
-    </p>
-
+    entry point: (app.js)
 ```
 
 Ejemplo
