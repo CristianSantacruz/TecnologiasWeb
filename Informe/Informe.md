@@ -85,6 +85,18 @@
     $npm install express --save
 ```
 
+* **Se observa que dentro del directorio de trabajo se ha creado el archivo ```package.json``` y el directorio que contiene los módulos de node.**
+
+<p align="center">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/08-ExpressJS-Parte-2/Informe/Imagenes/Archivo%20package.png?raw=true?raw=true?raw=true">
+</p>
+
+* **Contenido del archivo ```package.json```.**
+
+<p align="center">
+    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/08-ExpressJS-Parte-2/Informe/Imagenes/package.png?raw=true?raw=true?raw=true">
+</p>
+
 
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones:
