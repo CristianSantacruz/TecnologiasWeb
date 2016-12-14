@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            
+        </h1>
+    </header>
+    <nav class="menu">
+        <div id="header">
+            <ul class="nav">
+                <li><a href="../index.html">Inicio</a>
+                    <ul>
+                        <li><a href="menu1.html">var vs let vs const</a></li>
+                        <li><a href="menu2.html">Arrow Functions</a></li>
+                        <li><a href="menu3.html">Strings .includes() .repeat()</a></li>
+                        <li><a href="menu4.html">Template literals</a></li>
+                        <li><a href="menu5.html">Destructuring arrays</a></li>
+                        <li><a href="menu6.html">Destructuring objects</a></li>
+                        <li><a href="menu7.html">Modules export and import</a></li>
+                        <li><a href="menu8.html">Default Parameters, Rest Parameters, Named Parameters</a></li>
+                        <li><a href="menu9.html">Spread Operator</a></li>
+                        <li><a href="menu10.html">Classes</a></li>
+                        <li><a href="menu11.html">Promises (goodbye callback hell)</a></li>
+                        <li><a href="menu12.html">Getter and Setter in Classes</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div>
+           <h1><strong class="titulo">Promises (goodbye callback hell)</strong></h1>
+            <p class="presentacion">
+               
+               Promesas nos permiten dirigir nuestra código horizontal (demonios de devolución de llamada):
+               
+                func1(function (value1) {
+    func2(value1, function (value2) {
+        func3(value2, function (value3) {
+            func4(value3, function (value4) {
+                func5(value4, function (value5) {
+                    // Do something with value 5
+                });
+            });
+        });
+    });
+});
+
+                En código vertical:
+
+func1(value1)
+    .then(func2)
+    .then(func3)
+    .then(func4)
+    .then(func5, value5 => {
+        // Do something with value 5
+    });
+                
+                
+            </p>
+            <div class="adicional">
+            <h2>Descripcion</h2>
+            <p> La interfaz Promise representa un proxy para un valor no necesariamente conocido cuando se crea la promesa. Permite asociar manejadores a un eventual éxito o fracaso de acciones asíncronas. Esto permite que los métodos asíncronos devuelvan valores como métodos sincrónicos: en lugar del valor final, el método asíncrono devuelve una promesa de tener un valor en algún momento en el futuro.
+
+Una promesa pendiente puede llegar a ser cumplida con un valor o rechazada con una razón. Cuando cualquiera de ellas sucede, los manejadores asociados encolados se llaman mediante el método then de la promesa. (Si la promesa ya se ha cumplido o rechazado cuando se conecta un controlador correspondiente, el manejador será llamado, así que no hay condición de carrera entre el final de una operación asincrónica y sus manejadores se adjuntan).</p>
+            
+            <p> Beneficios de Promesas : Manejo de errores utilizando un montón de devoluciones de llamada anidados pueden obtener caótica. El uso de promesas, tenemos un camino claro a burbujear errores y manejarlos adecuadamente. Por otra parte, el valor de una promesa después de que se haya resuelto / rechazado es inmutable - que nunca va a cambiar.</p>
+            </div>
+        </div>
+        <div>
+           <br><br><br><br>
+            <a href="menu10.html" class="boton">Anterior</a>
+            <a href="menu12.html" class="boton">Siguiente</a>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            
+        </h1>
+    </header>
+    <nav class="menu">
+        <div id="header">
+            <ul class="nav">
+                <li><a href="../index.html">Inicio</a>
+                    <ul>
+                        <li><a href="menu1.html">var vs let vs const</a></li>
+                        <li><a href="menu2.html">Arrow Functions</a></li>
+                        <li><a href="menu3.html">Strings .includes() .repeat()</a></li>
+                        <li><a href="menu4.html">Template literals</a></li>
+                        <li><a href="menu5.html">Destructuring arrays</a></li>
+                        <li><a href="menu6.html">Destructuring objects</a></li>
+                        <li><a href="menu7.html">Modules export and import</a></li>
+                        <li><a href="menu8.html">Default Parameters, Rest Parameters, Named Parameters</a></li>
+                        <li><a href="menu9.html">Spread Operator</a></li>
+                        <li><a href="menu10.html">Classes</a></li>
+                        <li><a href="menu11.html">Promises (goodbye callback hell)</a></li>
+                        <li><a href="menu12.html">Getter and Setter in Classes</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div>
+           <h1><strong class="titulo">ARROW FUNCTIONS</strong></h1>
+            <p class="presentacion">uchas veces tenemos funciones anidadas en las que queremos preservar el contexto de esto desde su ámbito léxico. A continuación se muestra un ejemplo:
+            
+            //function Person(name) {
+    //this.name = name;
+//}
+
+//Person.prototype.prefixName = function (arr) {
+  //  return arr.map(function (character) {
+    //    return this.name + character; // Cannot read property 'name' of undefined
+    //});
+//};//
+          
+          Una solución común a este problema es almacenar el contexto de esto usando una variable:
+          
+          function Person(name) {
+    this.name = name;
+}
+
+Person.prototype.prefixName = function (arr) {
+    var that = this; // Store the context of this
+    return arr.map(function (character) {
+        return that.name + character;
+    });
+};
+                     
+            
+            </p>
+            <div class="adicional">
+            <h2>Descripcion</h2>
+            <p> La expresión de función flecha (también conocida como función flecha gruesa) dispone de una sintaxis más corta comparada con la expresión de función convencional y vincula contextualmente el valor de this. Las Funciones Flecha siempre son anónimas.</p>
+            <h2>Peculiaridades</h2>
+            <p>Práctica recomendada: utilice las funciones de flecha siempre que necesite conservar el valor léxico de esto.</p>
+            <p>
+Las funciones de flecha también son más concisas cuando se usan en expresiones de función que simplemente devuelven un valor</p>
+            
+            
+            </div>
+        </div>
+        <div>
+           <br><br><br><br>
+            <a href="menu1.html" class="boton">Anterior</a>
+            <a href="menu3.html" class="boton">Siguiente</a>
+        </div>
+    </section>
+</body>
+</html>

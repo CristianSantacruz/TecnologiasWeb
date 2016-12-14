@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            
+        </h1>
+    </header>
+    <nav class="menu">
+        <div id="header">
+            <ul class="nav">
+                <li><a href="../index.html">Inicio</a>
+                    <ul>
+                        <li><a href="menu1.html">var vs let vs const</a></li>
+                        <li><a href="menu2.html">Arrow Functions</a></li>
+                        <li><a href="menu3.html">Strings .includes() .repeat()</a></li>
+                        <li><a href="menu4.html">Template literals</a></li>
+                        <li><a href="menu5.html">Destructuring arrays</a></li>
+                        <li><a href="menu6.html">Destructuring objects</a></li>
+                        <li><a href="menu7.html">Modules export and import</a></li>
+                        <li><a href="menu8.html">Default Parameters, Rest Parameters, Named Parameters</a></li>
+                        <li><a href="menu9.html">Spread Operator</a></li>
+                        <li><a href="menu10.html">Classes</a></li>
+                        <li><a href="menu11.html">Promises (goodbye callback hell)</a></li>
+                        <li><a href="menu12.html">Getter and Setter in Classes</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div>
+           <h1><strong class="titulo">Default parameters, rest parameters, named parameters</strong></h1>
+            <p class="presentacion">
+                
+                Parametros por defecto
+                
+                function addTwoNumbers(x, y) {
+    x = x || 0;
+    y = y || 0;
+    return x + y;
+}
+               
+               En ES6, simplemente podemos suministrar valores por defecto para los parámetros en una función:
+               
+               Parametros de descanso
+                
+                function logArguments() {
+    for (var i=0; i < arguments.length; i++) {
+        console.log(arguments[i]);
+    }
+}
+
+Parametros con nombre
+
+
+function initializeCanvas(options) {
+    var height = options.height || 600;
+    var width  = options.width  || 400;
+    var lineStroke = options.lineStroke || 'black';
+}
+      
+                          
+                
+                
+                
+                
+            </p>
+            <div class="adicional">
+            <h2>Descripcion</h2>
+            <p>En ES5, que habíamos variando las formas de manejar funciones que necesitan los valores por defecto , argumentos indefinidos , y los parámetros con nombre . Con ES6, podemos lograr todo esto y mucho más utilizando una sintaxis más concisa. </p>
+            </div>
+        </div>
+        <div>
+           <br><br><br><br>
+            <a href="menu7.html" class="boton">Anterior</a>
+            <a href="menu9.html" class="boton">Siguiente</a>
+        </div>
+    </section>
+</body>
+</html>

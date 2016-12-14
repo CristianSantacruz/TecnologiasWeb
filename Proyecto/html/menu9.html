@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            
+        </h1>
+    </header>
+    <nav class="menu">
+        <div id="header">
+            <ul class="nav">
+                <li><a href="../index.html">Inicio</a>
+                    <ul>
+                        <li><a href="menu1.html">var vs let vs const</a></li>
+                        <li><a href="menu2.html">Arrow Functions</a></li>
+                        <li><a href="menu3.html">Strings .includes() .repeat()</a></li>
+                        <li><a href="menu4.html">Template literals</a></li>
+                        <li><a href="menu5.html">Destructuring arrays</a></li>
+                        <li><a href="menu6.html">Destructuring objects</a></li>
+                        <li><a href="menu7.html">Modules export and import</a></li>
+                        <li><a href="menu8.html">Default Parameters, Rest Parameters, Named Parameters</a></li>
+                        <li><a href="menu9.html">Spread Operator</a></li>
+                        <li><a href="menu10.html">Classes</a></li>
+                        <li><a href="menu11.html">Promises (goodbye callback hell)</a></li>
+                        <li><a href="menu12.html">Getter and Setter in Classes</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div>
+           <h1><strong class="titulo">Spread Operator</strong></h1>
+            <p class="presentacion">En ES5, podríamos encontrar el máximo de valores en una matriz utilizando el applymétodo de Math.maxla siguiente manera:
+
+Math.max.apply(null, [-1, 100, 9001, -32]); // 9001
+En ES6, ahora podemos usar el operador se extendió a pasar una matriz de valores que se utilizan como parámetros a una función:
+
+Math.max(...[-1, 100, 9001, -32]); // 9001
+Podemos concat literales de matriz fácilmente con esta sintaxis intuitiva:
+
+let cities = ['San Francisco', 'Los Angeles'];
+let places = ['Miami', ...cities, 'Chicago']; // ['Miami', 'San Francisco', 'Los Angeles', 'Chicago']</p>
+            <div class="adicional">
+            <h2>Descripcion</h2>
+            <p>El operador de propagación spread operator permite que una expresión sea expandida en situaciones donde se esperan múltiples argumentos (llamadas a funciones) o múltiples elementos (arrays literales). </p>
+            </div>
+        </div>
+        <div>
+           <br><br><br><br>
+            <a href="menu8.html" class="boton">Anterior</a>
+            <a href="menu10.html" class="boton">Siguiente</a>
+        </div>
+    </section>
+</body>
+</html>

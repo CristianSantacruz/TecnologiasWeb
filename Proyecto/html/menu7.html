@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            
+        </h1>
+    </header>
+    <nav class="menu">
+        <div id="header">
+            <ul class="nav">
+                <li><a href="../index.html">Inicio</a>
+                    <ul>
+                        <li><a href="menu1.html">var vs let vs const</a></li>
+                        <li><a href="menu2.html">Arrow Functions</a></li>
+                        <li><a href="menu3.html">Strings .includes() .repeat()</a></li>
+                        <li><a href="menu4.html">Template literals</a></li>
+                        <li><a href="menu5.html">Destructuring arrays</a></li>
+                        <li><a href="menu6.html">Destructuring objects</a></li>
+                        <li><a href="menu7.html">Modules export and import</a></li>
+                        <li><a href="menu8.html">Default Parameters, Rest Parameters, Named Parameters</a></li>
+                        <li><a href="menu9.html">Spread Operator</a></li>
+                        <li><a href="menu10.html">Classes</a></li>
+                        <li><a href="menu11.html">Promises (goodbye callback hell)</a></li>
+                        <li><a href="menu12.html">Getter and Setter in Classes</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div>
+           <h1><strong class="titulo">Modules export and import</strong></h1>
+            <p class="presentacion">
+           Exporting in ES6
+
+La exportación en CommonJS
+
+módulo . exportaciones  =  1 ;
+módulo . exportaciones  = {ejem :  ' bar ' };
+módulo . exportaciones  = [ ' foo ' , ' bar ' ];
+módulo . exportaciones  =  función de  barra () {};
+
+La exportacion en ES6
+
+export let name = 'David';
+export let age  = 25;
+
+
+Asi como la exportacion de objetos
+
+function sumTwo(a, b) {
+    return a + b;
+}
+
+function sumThree(a, b, c) {
+    return a + b + c;
+}
+
+export { sumTwo, sumThree };
+          
+          
+          
+           
+           
+           </p>
+            <div class="adicional">
+            <h2>Descripcion</h2>
+            <p>Antes de la ES6, utilizamos las bibliotecas como Browserify para crear módulos en el lado del cliente, y requerirá en Node.js . Con ES6, ahora podemos utilizar directamente los módulos de todo tipo (AMD) y CommonJS. </p>
+            </div>
+        </div>
+        <div>
+           <br><br><br><br>
+            <a href="menu6.html" class="boton">Anterior</a>
+            <a href="menu8.html" class="boton">Siguiente</a>
+        </div>
+    </section>
+</body>
+</html>
