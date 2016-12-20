@@ -24,3 +24,10 @@ El sails pide opciones si no estan definidas
 -3: DELETE MODE Borra todos los datos de la base y los vuelve a crear.
 
 
+El servidor del sails se encuentra ubicado en la carpeta assets
+
+## Generar controladores en sails
+```
+sails generate controller Saludo
+
+```
