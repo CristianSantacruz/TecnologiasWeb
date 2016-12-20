@@ -11,3 +11,11 @@
 > sails new nombreProyecto
 
 ```
+
+## Levantar servidor en sails
+```
+> sails lift
+
+```
+
+El sails pide opciones si no estan definidas
