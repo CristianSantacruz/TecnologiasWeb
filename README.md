@@ -19,3 +19,8 @@
 ```
 
 El sails pide opciones si no estan definidas
+-1: SAFE MODE No altera la base de datos.
+-2: ALTER MODE Altera la base de datos si se hizo algún cambio.
+-3: DELETE MODE Borra todos los datos de la base y los vuelve a crear.
+
+
