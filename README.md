@@ -8,6 +8,6 @@
 
 ## Crear un proyecto en sails
 ```
-
+> sails new nombreProyecto
 
 ```
