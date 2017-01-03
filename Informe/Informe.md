@@ -23,11 +23,10 @@
 
 <a name="Objetivos"></a>
 ## Objetivos:
-* Conocer conceptos básicos sobre la Web.
-* Aprender la estructura básica de una página HTML.
-* Aprender el uso de estilos en HTML.
-* Conocer herramientas de desarrolleres Web.
-* Analizar la cabecera de una página HTML.
+* Aprender el uso de Sails.js.
+* Levantar el servidor de Sails.js
+* Crear vistas en Sails.js.
+* Crear controladores en Sails.js.
 
 ---
 
