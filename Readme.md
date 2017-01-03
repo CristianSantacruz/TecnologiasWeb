@@ -3,13 +3,11 @@
 ## Generar modelos en Sailsjs
 ```
 > sails generate model nombreModelo
-
 ```
 
 ## Generar APIs en Sailsjs
 ```
 > sails generate api NombreAPI
-
 ```
 
 Un Api es la fusión de un *controlador * y un modelo.
@@ -32,5 +30,4 @@ Metodo HTTP: ´post´ Datos:
         apellido:'Santacruz´,
         correo:'santacruz-guarquila@hotmail.com'
     }
-
 ```
