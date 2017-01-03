@@ -203,7 +203,8 @@
 
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones:
-* Al igual que otros lenguajes de programación HTML tamnbién nos permite comentar bloques de código.
-* HTML nos permite usar estilos para mejorar la presentación de las paginas Web.
-* Mediante una imagen en el documento HTML podemos redireccionarnos a otra pagina Web.
-* Se recomienda realizar las prácticas con mayor detenimiento y no ir tan rápido.
+* Sails.js facilita en gran medida el desarrollo de APIs REST.
+* Al momoento de levantar el servidor de sails.js se debe espevificar en que modo se lo va a levantar: ```SAFE MODE, ALTER MODE O DELETE MODE```.
+* Las vistas sirven para el manejo de errores (404 y 500).
+* Los controladores  son los que que contienen la lógica para interactuar con los Modelos.
+* Se recomienda llevar la clase con mayor detenimiento.
