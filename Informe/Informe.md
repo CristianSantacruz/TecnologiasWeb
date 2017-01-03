@@ -66,15 +66,69 @@
 * <p align="justify">**templates:** para almacenar los HTML y JST de nuestra aplicación.</p>
 
 <br>
-### W3C:
+
+#### 3. Carpeta config:
 <p align="justify">
-    W3C son las siglas de World Wide Web Consortium , y es una comunidad internacional donde los estados miembros trabajan para poder desarrollar estándares para el desarrollo web y asi ayudar a un mejor desarrollo de el Internet a nivel mundial.
-W3C es reconocido a nivel mundial por ser la organización encargada de estandarizar El Lenguaje de Marcado de Hipertexto o mejor conocido como HTML , el cual es utilizado para el diseño y desarrollo de sitios web, dicho estándar inicio en el año de 1994 (es importante aclarar que antes de que W3C trabajara en HTML ya otras organizaciones habían desarrollado versiones previas).
-Sin embargo los objetivos de W3C van mas allá de el desarrollo de HTML y trabajan en otros proyectos a fin de poder brindar nuevas opciones para la elaboración de sitios web, tanto es así que en los últimos años han concentrados sus esfuerzo en el desarrollo de XHTML, una versión avanzada de HTML que pretende en los próximos años sustituirlo. (Fuente: <a href="http://sistemasyinternet.blogspot.com/2011/06/que-es-w3c.html">Mundo Informático</a>)
+    Esta es una de las carpetas importantes. Sails está diseñado para ser flexible. Asume algunas convenciones estándar, sino que también permite al desarrollador cambiar la forma de que sails configura la aplicación creada para adaptarse a las necesidades del proyecto. La siguiente es una lista de los archivos de configuración presentes en la carpeta config:
 </p>
-<p align="center">
-    <img src="http://2.bp.blogspot.com/-epjQpzrzca0/TewLvVF_ByI/AAAAAAAAAN8/gS4uaslEWfY/s1600/logo_w3c.jpg?raw=true" width="400" height="180">
+
+* <p align="justify">**Carpeta env:** Aquí guardamos las llaves, claves y contraseñas que necesitamos (para conectarnos a las bases de datos), y APIs remotas. Se clasifican en:</p>
+* <p align="justify">**Carpeta locales:** En esta sección guardamos archivos JSON que se usan como diccionario para internacionalizar nuestra aplicación, permitiendo agregar nuevos idiomas con menos esfuerzo y sin perder tiempo buscando e integrando una solución para nuestro proyecto.</p>
+* <p align="justify">**local.js:** Los usamos para definir el puerto y el modo de desarrollo de nuestra aplicación (desarrollo o producción).</p>
+* <p align="justify">**cors.js:** En esta determinamos la forma en que nuestro servidor manejará las solicitudes CORS; nos ofrece una forma moderna y segura de comunicarnos con datos externos y es más segura que JSONP pues nos permite especificar procedimientos para solicitudes GET, PUT, POST o DELETE.</p>
+* <p align="justify">**csrf.js:** Con este controlamos la seguridad con tokens CSRF, que nos permiten confirmar que las solicitudes que no son de tipo GET provengan exclusivamente desde nuestro servidor, evitando que otros sitios consuman nuestros servicios.</p>
+* <p align="justify">**blueprints.js:** Nos permite definir fácilmente APIs para interactuar con nuestros Modelos.</p>
+* <p align="justify">**globals.js:** En este archivo definimos las variables globales de nuestra aplicación.</p>
+* <p align="justify">**http.js:** Aquí especificamos detalles de nuestro servidor HTTP, especialmente el middleware y la administración de la caché.</p>
+* <p align="justify">**i18n.js:** En este archivo ponemos la lista de idiomas que soporta nuestra aplicación.</p>
+* <p align="justify">**bootstrap.js:** Este archivo se ejecuta justo antes de "levantar" nuestra aplicación con el comando lift, el cual nos sirve para definir tareas que necesitamos se ejecuten antes de levantar el servidor.</p>
+* <p align="justify">**connections.js:** En este archivo especificamos los ajustes necesarios por nuestros adaptadores y básicamente son intermediarios entre nuestra aplicación y las bases de datos, esto nos facilita administrar las conexiones a distintas bases de datos.</p>
+* <p align="justify">**log.js:** Aquí configuramos el nivel de logging de nuestra aplicación, en otras palabras, el nivel de detalle que deseamos registrar sobre los eventos en nuestra aplicación.</p>
+* <p align="justify">**models.js:** Nos permite manejar las conexiones por default que serán incluidas en todos nuestros Modelos.</p>
+* <p align="justify">**policies.js:** Esta nos permite definir políticas de seguridad para nuestros Controladores.</p>
+* <p align="justify">**routes.js:** En este archivo configuramos la relación entre las rutas de nuestra aplicación y los recursos, esto se hace generalmente después de que se cumplan las políticas de seguridad para los recursos solicitados.</p>
+* <p align="justify">**sessions.js:** Esta configuración nos permite guardar los datos de sesión de cada usuario y aplicarla en Express y en Socket.IO.</p>
+* <p align="justify">**sockets.js:** Lo usamos para personalizar la forma en que nuestro backend se comunica con el usuario por medio de Socket.IO.</p>
+* <p align="justify">**views.js:** En este podemos personalizar el motor que deseamos usar para definir los templates HTML que serán usados para la Visualización de nuestra aplicación, por ejemplo ejs, jade, underscore y muchos más.</p>
+
+<br>
+
+#### 4. Carpeta modules:
+<p align="justify">
+    Aquí se carga todas las dependencias que tengamos en el fichero package.json.
 </p>
+
+* <p align="justify">**images:** la usamos para almacenar nuestros assets visuales, por ejemplo transparencias .svg, .webp o .png, así como imágenes .jpg entre otras.</p>
+* <p align="justify">**js:** en esta colocamos los archivos Javascript para el cliente, por ejemplo las librerías.</p>
+* <p align="justify">**styles:** aquí puedes colocar tus archivos CSS. Para mejores resultados, te recomiendo usar un precompilador como stylus, de este modo puedes hacer modular tu código y crear automáticamente un CSS para producción con compresión y vendor prefixes.</p>
+* <p align="justify">**templates:** para almacenar los HTML y JST de nuestra aplicación.</p>
+
+<br>
+
+#### 5. Carpeta Assets:
+<p align="justify">
+    La carpeta de activos contiene subdirectorios para los archivos JavaScript y CSS que deben ser cargados en tiempo de ejecución. Este es el mejor lugar para almacenar bibliotecas auxiliares utilizados por la aplicación. Sección en la que vamos a colocar los archivos estáticos de nuestro proyecto; el favicon y el robots.txt los encontramos en la raíz del directorio y el resto los agrupamos en estas carpetas:
+</p>
+
+* <p align="justify">**images:** la usamos para almacenar nuestros assets visuales, por ejemplo transparencias .svg, .webp o .png, así como imágenes .jpg entre otras.</p>
+* <p align="justify">**js:** en esta colocamos los archivos Javascript para el cliente, por ejemplo las librerías.</p>
+* <p align="justify">**styles:** aquí puedes colocar tus archivos CSS. Para mejores resultados, te recomiendo usar un precompilador como stylus, de este modo puedes hacer modular tu código y crear automáticamente un CSS para producción con compresión y vendor prefixes.</p>
+* <p align="justify">**templates:** para almacenar los HTML y JST de nuestra aplicación.</p>
+
+<br>
+
+#### 6. Carpeta Assets:
+<p align="justify">
+    La carpeta de activos contiene subdirectorios para los archivos JavaScript y CSS que deben ser cargados en tiempo de ejecución. Este es el mejor lugar para almacenar bibliotecas auxiliares utilizados por la aplicación. Sección en la que vamos a colocar los archivos estáticos de nuestro proyecto; el favicon y el robots.txt los encontramos en la raíz del directorio y el resto los agrupamos en estas carpetas:
+</p>
+
+* <p align="justify">**images:** la usamos para almacenar nuestros assets visuales, por ejemplo transparencias .svg, .webp o .png, así como imágenes .jpg entre otras.</p>
+* <p align="justify">**js:** en esta colocamos los archivos Javascript para el cliente, por ejemplo las librerías.</p>
+* <p align="justify">**styles:** aquí puedes colocar tus archivos CSS. Para mejores resultados, te recomiendo usar un precompilador como stylus, de este modo puedes hacer modular tu código y crear automáticamente un CSS para producción con compresión y vendor prefixes.</p>
+* <p align="justify">**templates:** para almacenar los HTML y JST de nuestra aplicación.</p>
+
+<br>
+
 
 <a name="Desarrollo de la Práctica"></a>
 ## Desarrollo de la Práctica:
