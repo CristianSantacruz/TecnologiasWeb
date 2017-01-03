@@ -98,34 +98,19 @@
     Aquí se carga todas las dependencias que tengamos en el fichero package.json.
 </p>
 
-* <p align="justify">**images:** la usamos para almacenar nuestros assets visuales, por ejemplo transparencias .svg, .webp o .png, así como imágenes .jpg entre otras.</p>
-* <p align="justify">**js:** en esta colocamos los archivos Javascript para el cliente, por ejemplo las librerías.</p>
-* <p align="justify">**styles:** aquí puedes colocar tus archivos CSS. Para mejores resultados, te recomiendo usar un precompilador como stylus, de este modo puedes hacer modular tu código y crear automáticamente un CSS para producción con compresión y vendor prefixes.</p>
-* <p align="justify">**templates:** para almacenar los HTML y JST de nuestra aplicación.</p>
+<br>
+
+#### 5. Carpeta tasks:
+<p align="justify">
+    Se usa para guardar tareas y configuraciones de Grunt.
+</p>
 
 <br>
 
-#### 5. Carpeta Assets:
+#### 6. Carpeta views:
 <p align="justify">
-    La carpeta de activos contiene subdirectorios para los archivos JavaScript y CSS que deben ser cargados en tiempo de ejecución. Este es el mejor lugar para almacenar bibliotecas auxiliares utilizados por la aplicación. Sección en la que vamos a colocar los archivos estáticos de nuestro proyecto; el favicon y el robots.txt los encontramos en la raíz del directorio y el resto los agrupamos en estas carpetas:
+    Las vistas de la aplicación se almacenan en esta carpeta. En cuanto a su contenido, nos damos cuenta de que las opiniones se generan por defecto como, JavaScript incrustado, EJS. Además, la carpeta contiene vistas para el manejo de errores (404 y 500) y también el archivo de diseño, layout.ejs, y los puntos de vista para el controlador de la casa, que se genera mediante Sails.
 </p>
-
-* <p align="justify">**images:** la usamos para almacenar nuestros assets visuales, por ejemplo transparencias .svg, .webp o .png, así como imágenes .jpg entre otras.</p>
-* <p align="justify">**js:** en esta colocamos los archivos Javascript para el cliente, por ejemplo las librerías.</p>
-* <p align="justify">**styles:** aquí puedes colocar tus archivos CSS. Para mejores resultados, te recomiendo usar un precompilador como stylus, de este modo puedes hacer modular tu código y crear automáticamente un CSS para producción con compresión y vendor prefixes.</p>
-* <p align="justify">**templates:** para almacenar los HTML y JST de nuestra aplicación.</p>
-
-<br>
-
-#### 6. Carpeta Assets:
-<p align="justify">
-    La carpeta de activos contiene subdirectorios para los archivos JavaScript y CSS que deben ser cargados en tiempo de ejecución. Este es el mejor lugar para almacenar bibliotecas auxiliares utilizados por la aplicación. Sección en la que vamos a colocar los archivos estáticos de nuestro proyecto; el favicon y el robots.txt los encontramos en la raíz del directorio y el resto los agrupamos en estas carpetas:
-</p>
-
-* <p align="justify">**images:** la usamos para almacenar nuestros assets visuales, por ejemplo transparencias .svg, .webp o .png, así como imágenes .jpg entre otras.</p>
-* <p align="justify">**js:** en esta colocamos los archivos Javascript para el cliente, por ejemplo las librerías.</p>
-* <p align="justify">**styles:** aquí puedes colocar tus archivos CSS. Para mejores resultados, te recomiendo usar un precompilador como stylus, de este modo puedes hacer modular tu código y crear automáticamente un CSS para producción con compresión y vendor prefixes.</p>
-* <p align="justify">**templates:** para almacenar los HTML y JST de nuestra aplicación.</p>
 
 <br>
 
