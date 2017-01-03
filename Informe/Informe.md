@@ -193,6 +193,14 @@
 
     };
     ```
+    
+    <p align="justify">
+        Para la verificación se dirige al la página web y en el url se escribe lo siguiente:
+    </p>
+    
+    ``` 
+        http://localhost:1337/saludo/adios
+    ```
 
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones:
