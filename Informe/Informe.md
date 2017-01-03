@@ -73,6 +73,9 @@
 </p>
 
 * <p align="justify">**Carpeta env:** Aquí guardamos las llaves, claves y contraseñas que necesitamos (para conectarnos a las bases de datos), y APIs remotas. Se clasifican en:</p>
+    * development.js para el modo de desarrollo.
+    * production.js para el modo de producción.
+    
 * <p align="justify">**Carpeta locales:** En esta sección guardamos archivos JSON que se usan como diccionario para internacionalizar nuestra aplicación, permitiendo agregar nuevos idiomas con menos esfuerzo y sin perder tiempo buscando e integrando una solución para nuestro proyecto.</p>
 * <p align="justify">**local.js:** Los usamos para definir el puerto y el modo de desarrollo de nuestra aplicación (desarrollo o producción).</p>
 * <p align="justify">**cors.js:** En esta determinamos la forma en que nuestro servidor manejará las solicitudes CORS; nos ofrece una forma moderna y segura de comunicarnos con datos externos y es más segura que JSONP pues nos permite especificar procedimientos para solicitudes GET, PUT, POST o DELETE.</p>
