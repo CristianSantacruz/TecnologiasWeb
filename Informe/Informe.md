@@ -1,11 +1,11 @@
-# INTRODUCCIÓN A LA WEB
+# Sailsjs - Assets / Views / Pipeline / Controllers
 
 #### Materia: Tecnologías Web con JavaScript
-#### Tema: Introducción a la Web
-#### Fecha: 2016-10-25
+#### Tema: Sailsjs - Assets / Views / Pipeline / Controllers
+#### Fecha: 2016-01-05
 #### Estudiante: Cristian David Santacruz Guarquila
 #### Profesor: Tania Calle - Adrian Eguez
-#### Número de Informe: 01
+#### Número de Informe: 05
 ---
 
 ## Índice de Contenidos:
@@ -18,7 +18,7 @@
 ---
 <a name="Tema"></a>
 ## Tema:
-### Introducción a la Web
+### Sailsjs - Assets / Views / Pipeline / Controllers
 ---
 
 <a name="Objetivos"></a>
@@ -33,49 +33,37 @@
 
 <a name="Marco Teórico"></a>
 ## Marco Teórico:
-### Definición de WWW:
+### Sails.js:
 <p align="justify">
-    La triple www son las siglas que identifican a Word Wide Web, expresión inglesa que define a la red global mundial de documentos de hipertexto que se encuentran enlazados entre sí y a la cual se tiene acceso a través del internet. La triple www fue desarrollada para finales de los años 80 por los investigadores Tim Berners Lee y Robert Cailliau.
-    
-    Para poder utilizar la www es necesario disponer de un navegador web como por ejemplo: Microsoft Internet Explorer, Mozilla Firefox, etc. La triple www se fundamenta en hipertextos, es decir, páginas en las que se pueden insertar hipervínculos, estos le permiten al usuario poder conducirse de una página a otra de esa web. (Fuente: <a href="http://conceptodefinicion.de/w-w-w/">Conceptodefinicion.de</a>)
+    Sails.js es un framework para Node.js. Está realizado bajo el framework Express, incluyendo varias capas de abstracción para hacer un desarrollo más fácil. Sails viene instalado con un potente ORM/ODM llamada waterline, una herramienta de almacén de datos agnóstico que simplifica drásticamente la interacción con una o más bases de datos. Proporciona una capa de abstracción en la parte superior de la base de datos subyacente, lo que le permite consultar fácilmente y manipular sus datos sin necesidad de escribir código de integración específica del proveedor. La última versión de Sails viene preparado para trabajar Postgres, Mongo, MySQL, Redis, y en disco. Entre otras cosas, nos facilita en gran medida el desarrollo de APIs REST, servidores de archivos, seguridad y websockets para menajar y realizar peticiones en tiempo real gracias a Socket.io.(Fuente: <a href="https://openwebinars.net/blog/tutorial-sailsjs-instalacion/">openwebinars</a>)
 </p>
 
 <p align="center">
-    <img src="http://conceptodefinicion.de/wp-content/uploads/2016/08/www.jpg?raw=true" width="400" height="200">
+    <img src="https://platzi.com/blog/content/images/2015/05/687474703a2f2f62616c64657264617368792e6769746875622e696f2f7361696c732f696d616765732f6c6f676f2e706e67.png" width="300" height="100">
 </p>
 
 <br>
-### HTML:
+#### 1. Carpeta API:
 <p align="justify">
-    HTML, sigla en inglés de HyperText Markup Language (lenguaje de marcas de hipertexto), hace referencia al lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado código HTML) para la definición de contenido de una página web, como texto, imágenes, videos, juegos, entre otros. Es un estándar a cargo del World Wide Web Consortium (W3C) o Consorcio WWW, organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, sobre todo en lo referente a su escritura e interpretación. Se considera el lenguaje web más importante siendo su invención crucial en la aparición, desarrollo y expansión de la World Wide Web (WWW). Es el estándar que se ha impuesto en la visualización de páginas web y es el que todos los navegadores actuales han adoptado. (Fuente: <a href="https://es.wikipedia.org/wiki/HTML">Wikipedia</a>)
+    En esta sección almacenamos la mayor parte de la lógica de nuestro backend, el Modelo y el Controlador son definidos por los contenidos de esta carpeta y esta a su vez contiene la siguientes carpetas:
 </p>
 
-<p align="center">
-    <img src="https://nanysman.files.wordpress.com/2012/11/html1.png" width="180" height="200">
-</p>
+* <p align="justify">La carpeta controllers contiene los controladores de la aplicación. Estos son archivos de Javascript que contienen la lógica para interactuar con los Modelos y renderizar la Visualización de forma adecuada.</p>
+* <p align="justify">En la carpeta models se almacenan los modelos de la aplicación. Estas son estructuras que almacenan los datos de tu aplicación.</p>
+* <p align="justify">En la carpeta de policies se almacenan las reglas de acceso de usuario de aplicación. Esto es Middleware de Express, que se encarga de controlar la seguridad de los Controladores.</p>
+* <p align="justify">En la carpeta de responses se almacenan la lógica que genera las respuestas del servidor.</p>
+* <p align="justify">En la carpeta de services se almacenan los servicios api implementadas por la aplicación. Son archivos Javascript similares a los Controladores, pero no necesariamente generan una respuesta inmediata al cliente, o simplemente no tiene comunicación directa con él. Son muy útiles para crear tareas o servicios asíncronos, por ejemplo, procesos lentos cuya respuesta es enviada al cliente eventualmente via websocket o email.</p>
 
 <br>
-### Algunos Elementos de HTML:
-```
-<!DOCTYPE>      --> Define el tipo de Documento
-<html>          --> Define un Documento HTML
-<title>         --> Define un título para el Documento
-<body>          --> Define el cuerpo del Documento
-<h1> a <h6>     --> Define los encabezados HTML
-<p>             --> Define un párrafo
-<br>            --> Inserta una línea en blanco
-<!-- ... -->    --> Define un comentario
-<table>         --> Tabla
-<img>           --> Define una inagen
-<ol>            --> Define una lista ordenada
-<ul>            --> Define una lista desordenada
-<li>            --> Define un ítem de una lista
-<link>          --> Define información relacional para el Documento
-<a>             --> Define un hipervínculo
-<video>         --> Video
-<audio>         --> Audio
-```
-(Fuente: <a href="http://www.htmlquick.com/es/reference/tags.html">Tutoriales y Referencias sobre HTML</a>)
+#### 2. Carpeta Assets:
+<p align="justify">
+    La carpeta de activos contiene subdirectorios para los archivos JavaScript y CSS que deben ser cargados en tiempo de ejecución. Este es el mejor lugar para almacenar bibliotecas auxiliares utilizados por la aplicación. Sección en la que vamos a colocar los archivos estáticos de nuestro proyecto; el favicon y el robots.txt los encontramos en la raíz del directorio y el resto los agrupamos en estas carpetas:
+</p>
+
+* <p align="justify">**images:** la usamos para almacenar nuestros assets visuales, por ejemplo transparencias .svg, .webp o .png, así como imágenes .jpg entre otras.</p>
+* <p align="justify">**js:** en esta colocamos los archivos Javascript para el cliente, por ejemplo las librerías.</p>
+* <p align="justify">**styles:** aquí puedes colocar tus archivos CSS. Para mejores resultados, te recomiendo usar un precompilador como stylus, de este modo puedes hacer modular tu código y crear automáticamente un CSS para producción con compresión y vendor prefixes.</p>
+* <p align="justify">**templates:** para almacenar los HTML y JST de nuestra aplicación.</p>
 
 <br>
 ### W3C:
