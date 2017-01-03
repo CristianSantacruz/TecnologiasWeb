@@ -122,52 +122,77 @@
 ## Desarrollo de la Práctica:
 * **Instalar sailsjs**
 
-<p align="center">
-    Sailsjs es un servidor web que se conecta a bases de datos y puede funcionar con aplicaciones en tiempo real, ayudandonos a crear REST APIs.
-</p>
+    <p align="justify">
+        Sailsjs es un servidor web que se conecta a bases de datos y puede funcionar con aplicaciones en tiempo real, ayudandonos a crear REST APIs.
+    </p>
 
-```
-    > npm install -g sails
+    ```
+        > npm install -g sails
+    ```
 
-```
+
+* **Crear un proyecto en Sailsjs**
+    ```
+        > sails new NombreProyecto
+    ```
+
+* **Levantar el servidor**
+    ```
+        > sails lift
+    ```
+    ```
+        > node app.js
+    ```
+    <p align="justify">
+        Sails pide opciones, si no estan definidas, las opciones son:
+    </p>
+    * 1: SAFE MODE no se va a alterar la base de datos.
+    * 2: ALTER MODE se va a alterar la base de datos si nosotros hicimos cambios en los modelos por ejemplo.
+    * 3: DELETE MODE borra todos los datos de la base y vuelve a crear los modelos.
+    <br>
+
+* **Servidor Web de Sailsjs.**
+
+    <p align="justify">
+        El servidor web de sails se encuentra localizado en la carpeta assets. En esta carpeta se creo tres archivos (html, css, js).
+    </p>
 
 
-* **Los TAGS ```<h1> a <h6>``` nos permiten poner encabezados al documento HTML.**
+* **Crear vistas**
+    <p align="justify">
+        Para crear vistas hay que crear las rutas en el archivo config/routes.js, luego se crean los archivos de las nuevas vistas en el directorio views cada archivodebe tener el mismo nombre que se puso en la creación de las vistas. Cada archivo tiene como extensión .ejs
+    </p>
 
-<p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Cabeceras.png?raw=true">
-</p>
-
-* **Los TAGS ```<p> ... </p>``` nos permiten crear p+arrafos en el documento HTML.**
-
-<p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Parrafo.png?raw=true">
-</p>
-
-* **Los TAGS ```<!-- ... -->``` nos permiten comentar bloques de código en el documento HTML.**
-
-<p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Comentarios.png?raw=true">
-</p>
-
-* **Se puede crear imagenes que nos redireccione a otras páginas Web:**
-
-```
-<a href="https://es.wikipedia.org/wiki/Saint_Seiya" target="blank">
-        <img src="http://www.gratistodo.com/contenido/videos-gratis/series-de-tv/caballeros-del-zodiaco.jpg">
-    </a>
+* **Generar controladores Sailsja**
+    <p align="justify">
+        Para generar constroladores se utiliza el siguiente comando:
+    </p>
     
-```
-<br>
-<p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Imagenes.Enlaces.png?raw=true">
-</p>
+    ```
+        > sails  generate controller NombreDelControlador
+    ```
+    
+    <p align="justify">
+        Para la editar el controlador que se ha creado nos dirigimos a la carpeta api/controllers. En esa carpeta se encuentra el nombre del controlador. Dentro de ello se edita el objeto para las respuestas.
+    </p>
+    
+    ``` javascript
+        module.exports = {
+            hola:function(req,res){
+            res.send('Hola');
 
-Despúes de dar click en esta imagen nos redirecciona a la siguiente página Web.
+        },
+            adios:function(req,res){
+            res.send('Adios');
 
-<p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Redireccion.png?raw=true">
-</p>
+        },
+        
+        hora:function(req,res){
+        res.send('Hora');
+        }
+
+    };
+    ```
 
 <a name="Conclusiones y Recomendaciones"></a>
 ## Conclusiones y Recomendaciones:
