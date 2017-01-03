@@ -120,11 +120,17 @@
 
 <a name="Desarrollo de la Práctica"></a>
 ## Desarrollo de la Práctica:
-* **Postman es una herramienta que nos permite revisar los códigos de estatutos de HTML.**
+* **Instalar sailsjs**
 
 <p align="center">
-    <img src="https://github.com/CristianSantacruz/TecnologiasWeb/blob/master/Informe.01/Capturas/Postman.png?raw=true">
+    Sailsjs es un servidor web que se conecta a bases de datos y puede funcionar con aplicaciones en tiempo real, ayudandonos a crear REST APIs.
 </p>
+
+```
+    > npm install -g sails
+
+```
+
 
 * **Los TAGS ```<h1> a <h6>``` nos permiten poner encabezados al documento HTML.**
 
