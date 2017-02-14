@@ -1,4 +1,20 @@
-<h1>Editar Usuario</h1>
+
+<%  
+
+    if(!UsuarioAEditar) {
+        var usuarioAEditar = {
+            "nombres": "Cristian Santacruz",
+            "apellidos": "Cristian Santacruz",
+            "correo": "Cristian Santacruz",
+            "createdAt": "Cristian Santacruz",
+            "updatedAt": "Cristian Santacruz",
+            "id":
+        }
+    }
+
+%>
+
+<h1>Editar Usuario - <%=UsuarioAEditar.nombres%></h1>
 
 
 <form action="/Usuario/CrearUsuario" method="post">
