@@ -1,38 +1,53 @@
-
-<%  
-
-    if(!UsuarioAEditar) {
-        var usuarioAEditar = {
-            "nombres": "Cristian Santacruz",
-            "apellidos": "Cristian Santacruz",
-            "correo": "Cristian Santacruz",
-            "createdAt": "Cristian Santacruz",
-            "updatedAt": "Cristian Santacruz",
-            "id": 1
-        }
-    }
-
-%>
-
-<h1>Editar Usuario - <%=UsuarioAEditar.nombres%></h1>
+<h1>Editar Usuario  - <%= usuarioAEditar.nombres %></h1>
 
 
-<form action="/Usuario/CrearUsuario" method="post">
+<div class="row">
+    <div class="col-sm-5">
 
-    <div class="form-group">
-        <label>Nombres</label>
-        <input type="text" class="form-control" placeholder="Ingrese sus Nombres" name="nombres">
+        <form action="/Usuario/EditarUsuario" method="post">
+            <div class="form-group">
+                <label>Nombres</label>
+
+                <input type="text" class="form-control" placeholder="Ingrese sus Nombres" name="nombres" value="<%= usuarioAEditar.nombres %>">
+
+
+            </div>
+            <div class="form-group">
+                <label>Apellidos</label>
+                <input type="text" class="form-control" placeholder="Ingrese sus Apellidos" name="apellidos" value="<%= usuarioAEditar.apellidos %>">
+            </div>
+
+            <div class="form-group">
+                <label>Correo</label>
+
+
+                <input type="email" class="form-control" placeholder="Ingrese su correo" name="correo" value="<%= usuarioAEditar.correo %>">
+
+                <input type="hidden" name="idUsuario" value="<%= usuarioAEditar.id %>">
+
+
+
+            </div>
+            
+            
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Ingrese su nuevo Password" name="password">
+            </div>
+            
+            <button type="submit" class="btn btn-success btn-block">Editar Usuario :)</button>
+        </form>
+
     </div>
+    <div class="col-sm-2"></div>
 
-    <div class="form-group">
-        <label>Apellidos</label>
-        <input type="text" class="form-control" placeholder="Ingrese sus Apellidos"  name="apellidos">
+    <div class="col-sm-5 text-center">
+
+        <h2><%= usuarioAEditar.apellidos%></h2>
+        <h4><%= usuarioAEditar.nombres%></h4>
+        <p>
+            <%= usuarioAEditar.correo%>
+        </p>
+
     </div>
-
-    <div class="form-group">
-        <label>Correo</label>
-        <input type="email" class="form-control" placeholder="Ingrese su correo"  name="correo">
-    </div>
-
-    <button type="submit" class="btn btn-success">Crear Usuario :)</button>
-</form>
+</div>
