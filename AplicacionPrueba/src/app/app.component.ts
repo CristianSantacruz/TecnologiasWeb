@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Response, Http} from "@angular/http";
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,7 @@ export class AppComponent implements OnInit {
   apellido:string="";
   tamanio="50px"
 
-  constructor() {
+  constructor(private http: Http) {
     this.nombre="Cristian";
     this.apellido="Santacruz";
     console.log("Inicio el Constructor")
@@ -38,7 +39,7 @@ export class AppComponent implements OnInit {
     console.log("Hizo mouse enter")
   }
 
-  nuevaTienda:any=(){}
+  nuevaTienda:any={};
 
 crearTienda(formulario){
   console.log(formulario);
