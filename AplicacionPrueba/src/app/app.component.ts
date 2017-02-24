@@ -39,8 +39,19 @@ export class AppComponent implements OnInit {
   }
 
   nuevaTienda:any=(){}
-  crearTienda (formulario) {
-    console.log(formulario)
+
+crearTienda(formulario){
+  console.log(formulario);
+  this.http
+    .post("http://localhost:1337/Tienda", formulario.valores)
+    .subscribe(
+      res=>console.log('Respuesta: ',res),
+      err=>console.log('Error: ',err),
+      ()=>{
+        console.log("Se completo la accion")
+      }
+    );
 }
+
 //  title = 'app works!';
 }
