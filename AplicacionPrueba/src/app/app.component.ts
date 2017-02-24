@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Response, Http} from "@angular/http";
 import {MasterURLService} from "./services/master-url.service";
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-root',
@@ -10,50 +11,45 @@ import {MasterURLService} from "./services/master-url.service";
 
 // CTRL A --> CTRL + ALT + L --> Para Identar Código
 export class AppComponent implements OnInit {
-  title:string ="Hola amigos";
-  nombre:string="";
-  apellido:string="";
-  tamanio="50px"
+  title:string ="Bienvenido a Ingresar Tiendas";
+  tamanio="50px";
+  tiendas = [];
+  disableButtons = {
+    NuevaTiendaFormularioButtom:false
+  };
 
   constructor(private _http: Http, private _masterURL:MasterURLService) {
-    this.nombre="Cristian";
-    this.apellido="Santacruz";
-    console.log("Inicio el Constructor")
   }
 
   ngOnInit() {
-    console.log("OnInit");
-    this.nombre="David";
-    this.apellido="Guarquila"
-
-  }
-
-  nombreCompleto():string{
-    return `${this.nombre} - ${this.apellido}`;
-  }
-
-  hizoClic() {
-    console.log("Hizo clic")
-  }
-
-  hizoMouseEnter() {
-    console.log("Hizo mouse enter")
+    this._http.get(this._masterURL.url+"Tienda")
+      .subscribe(
+        (res:Response)=>{
+          this.tiendas = res.json();
+        },
+        (err)=>{
+          console.log(err);
+        }
+      )
   }
 
   nuevaTienda:any={};
 
-  crearTienda(formulario) {
-
+  crearTienda(formulario:NgForm) {
+    console.log(formulario);
+    this.disableButtons.NuevaTiendaFormularioButtom = true;
     this._http.post(this._masterURL.url+"Tienda", {
       nombre:formulario.value.nombre
     }).subscribe(
       (res)=>{
         console.log("No hubo Errores");
         console.log(res);
-        this.nuevaTienda = {}
+        this.nuevaTienda = {};
+        this.disableButtons.NuevaTiendaFormularioButtom = false;
       },
       (err)=>{
-        console.log("Ocurrio un error",err);
+        this.disableButtons.NuevaTiendaFormularioButtom = false;
+        console.log("Ocurrio un err or",err);
       },
       ()=>{
         console.log("Termino la función vamos a las casas")
