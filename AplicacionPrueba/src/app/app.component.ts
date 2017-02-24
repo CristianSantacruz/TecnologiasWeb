@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   apellido:string="";
   tamanio="50px"
 
-  constructor(private http: Http) {
+  constructor(private _http: Http) {
     this.nombre="Cristian";
     this.apellido="Santacruz";
     console.log("Inicio el Constructor")
