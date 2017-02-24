@@ -25,7 +25,9 @@ export class AppComponent implements OnInit {
     this._http.get(this._masterURL.url+"Tienda")
       .subscribe(
         (res:Response)=>{
-          this.tiendas = res.json();
+          this.tiendas = res.json().map((value)=>{value.formularioCerrado = true;
+          return value;
+          });
         },
         (err)=>{
           console.log(err);
