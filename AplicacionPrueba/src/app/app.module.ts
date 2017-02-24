@@ -8,13 +8,15 @@ import {MasterURLService} from "./services/master-url.service";
 import { HomeComponent } from './home/home.component';
 import {routing} from "./app.routes";
 import { TiendaComponent } from './tienda/tienda.component';
+import { ProductosComponent } from './productos/productos.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TiendaComponent
+    TiendaComponent,
+    ProductosComponent
   ],
   imports: [
     BrowserModule,
