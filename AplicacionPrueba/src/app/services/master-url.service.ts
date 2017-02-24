@@ -5,14 +5,14 @@ export class MasterURLService {
 
   private _url:string;
   constructor() {
-    this.url = "http://localhost:1337";
+    this._url = "http://localhost:1337/";
   }
 
   get url():string{
-    return this.url;
+    return this._url;
   }
 
   set url(nuevoURL:string){
-    this.url=nuevoURL;
+    this._url=nuevoURL;
   }
 }

@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {MasterURLService} from "./services/master-url.service";
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -16,9 +17,9 @@ import {MasterURLService} from "./services/master-url.service";
     HttpModule
   ],
   providers: [
-    //Aqui van los servicios
     MasterURLService
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
