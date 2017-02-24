@@ -1,10 +1,46 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'app works!';
+
+// CTRL A --> CTRL + ALT + L --> Para Identar Código
+export class AppComponent implements OnInit {
+  title:string ="Hola amigos";
+  nombre:string="";
+  apellido:string="";
+  tamanio="50px"
+
+  constructor() {
+    this.nombre="Cristian";
+    this.apellido="Santacruz";
+    console.log("Inicio el Constructor")
+  }
+
+  ngOnInit() {
+    console.log("OnInit");
+    this.nombre="David";
+    this.apellido="Guarquila"
+
+  }
+
+  nombreCompleto():string{
+    return `${this.nombre} - ${this.apellido}`;
+  }
+
+  hizoClic() {
+    console.log("Hizo clic")
+  }
+
+  hizoMouseEnter() {
+    console.log("Hizo mouse enter")
+  }
+
+  nuevaTienda:any=(){}
+  crearTienda (formulario) {
+    console.log(formulario)
+}
+//  title = 'app works!';
 }
