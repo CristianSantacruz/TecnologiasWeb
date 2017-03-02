@@ -8,25 +8,19 @@
 module.exports = {
 
   attributes: {
+
     nombre: {
       type: 'string',
-      enum: ['Coker', 'Pitbull', 'Pastor Aleman', 'Labrador'],
-      required: true,
-      unique: true
+      required: true
     },
     tamanio: {
       type: 'string',
-      enum: ['Pequeño', 'Mediano', 'Grande'],
       required: true
     },
 
     mascotas: {
-
       collection: 'Mascota',
-
       via: 'idRaza'
     }
-
   }
 };
-
