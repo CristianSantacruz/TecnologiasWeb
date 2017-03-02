@@ -11,15 +11,15 @@ module.exports = {
     var parametros = req.allParams();
 
     if (req.method == 'POST') {
-      if (parametros.nombre && parametros.peso) {
+      if (parametros.nombre && parametros.tamanio) {
         Raza.create({
           nombre: parametros.nombre,
-          peso: parametros.peso
+          peso: parametros.tamanio
         }).exec(function (error, razaCreada) {
           if (error) return res.view('error', {
             title: 'Error',
             error: {
-              descripcion: 'Hubo problemas creando la raza, inténtalo de nuevo: ' + error,
+              descripcion: 'No se pudo crear la raza: ' + error,
               url: '/crearRaza'
             }
           });
@@ -61,13 +61,13 @@ module.exports = {
         Raza.update({
           id: parametros.id
         }, {
-          peso: parametros.peso
+          tamanio: parametros.tamanio
         }).exec(function (error) {
           if (error) {
             return res.view('error', {
               title: 'Error',
               error: {
-                descripcion: 'Hubo un error editando la raza: ' + error,
+                descripcion: 'No se pudo editar la raza: ' + error,
                 url: '/listarRazas'
               }
             });
@@ -80,9 +80,7 @@ module.exports = {
               razas: razasEncontradas
             })
           });
-
         });
-
       } else {
         return res.view('error', {
           title: 'Error',
@@ -102,7 +100,6 @@ module.exports = {
         }
       });
     }
-
   },
   borrarRaza: function (req, res) {
     var parametros = req.allParams();
@@ -127,7 +124,7 @@ module.exports = {
             if (errorIndefinido) {
               res.view('vistas/Error', {
                 error: {
-                  descripcion: "Hubo un problema cargando las razas",
+                  descripcion: "No se pudo cargar las razas",
                   rawError: errorIndefinido,
                   url: "/ListarRazas"
                 }
@@ -142,7 +139,7 @@ module.exports = {
     } else {
       return res.view('vistas/Error', {
         error: {
-          descripcion: "Necesitamos el ID para borrar la raza",
+          descripcion: "Ingrese el ID para borrar la raza",
           rawError: "No envía ID",
           url: "/ListarRaza"
         }

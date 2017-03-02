@@ -16,10 +16,6 @@ module.exports = {
       fechaNacimiento:{
           type:'date'
       },
-      paisNacimiento:{
-          type:'string',
-          enum:['Ecuador','Perú','Colombia']
-      },
 
       idRaza:{
           // Model-> es el nombre de la tabla padre

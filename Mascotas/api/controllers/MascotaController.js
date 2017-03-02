@@ -11,23 +11,22 @@ module.exports = {
     var parametros = req.allParams();
 
     if (req.method == 'POST') {
-      if (parametros.nombre && parametros.paisNacimiento && parametros.idRaza) {
+      if (parametros.nombre && parametros.idRaza) {
         Mascota.create({
           nombre: parametros.nombre,
           fechaNacimiento: parametros.fechaNacimiento,
-          paisNacimiento: parametros.paisNacimiento,
           idRaza: parametros.idRaza,
         }).exec(function (error, mascotaCreado) {
           if (error) return res.view('error', {
             title: 'Error',
             error: {
-              descripcion: 'Hubo Problemas creando la mascota, intentalo de nuevo: ' + error,
+              descripcion: 'No se pudo registrar la mascota: ' + error,
               url: '/crearMascota'
             }
           });
 
           Mascota.find().populate("idRaza").exec(function (error, mascotasEncontrados) {
-            if (error) return res.serverError()
+            if (error) return res.serverError();
             return res.view('vistas/Mascota/listarMascotas', {
               title: 'Lista de Mascotas',
               mascotas: mascotasEncontrados
@@ -36,7 +35,6 @@ module.exports = {
 
         });
       } else {
-
         return res.view('error', {
           title: 'Error',
           error: {
@@ -54,7 +52,6 @@ module.exports = {
         }
       });
     }
-
   },
   editarMascota: function (req, res) {
 
@@ -65,13 +62,13 @@ module.exports = {
         Mascota.update({
           id: parametros.id
         }, {
-          nombre: parametros.nombre,
+          nombre: parametros.nombre
         }).exec(function (error) {
           if (error) {
             return res.view('error', {
               title: 'Error',
               error: {
-                descripcion: 'Hubo un error editando la mascota: ' + error,
+                descripcion: 'No se pudo editar la mascota: ' + error,
                 url: '/listarMascota'
               }
             });
@@ -83,11 +80,8 @@ module.exports = {
               mascotas: mascotasEncontradas
             })
           });
-
         });
-
       } else {
-
         console.log('NO PARÁMETROS');
         return res.view('error', {
           title: 'Error',
@@ -107,13 +101,10 @@ module.exports = {
         }
       });
     }
-
   },
   borrarMascota: function (req, res) {
     var parametros = req.allParams();
-
     if (parametros.id) {
-
       Mascota.destroy({
         id: parametros.id
       }).exec(function (errorInesperado, mascotaEliminada) {
@@ -128,11 +119,10 @@ module.exports = {
         }
         Mascota.find().populate("idRaza")
           .exec(function (errorIndefinido, mascotasEncontradas) {
-
             if (errorIndefinido) {
               res.view('vistas/Error', {
                 error: {
-                  descripcion: "Hubo un problema cargando las mascotas",
+                  descripcion: "No se pudo cargar las mascotas",
                   rawError: errorIndefinido,
                   url: "/ListarMascotas"
                 }
@@ -143,7 +133,6 @@ module.exports = {
             });
           })
       })
-
     } else {
       return res.view('vistas/Error', {
         error: {
@@ -154,5 +143,4 @@ module.exports = {
       });
     }
   }
-
 };

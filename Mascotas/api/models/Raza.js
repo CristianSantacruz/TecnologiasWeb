@@ -11,22 +11,18 @@ module.exports = {
 
     nombre: {
       type: 'string',
-      enum: ['Bulldog', 'Chihuahua', 'Pitbull'],
+      enum: ['Coker', 'Pastor Aleman', 'Labrador'],
       required: true,
       unique: true
     },
-    peso: {
-      type: 'integer',
+    tamanio: {
+      type: 'string',
       required: true
     },
 
     mascotas: {
-
       collection: 'Mascota',
-
       via: 'idRaza'
     }
-
   }
-
 };
