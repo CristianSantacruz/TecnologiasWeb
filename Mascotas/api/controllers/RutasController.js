@@ -11,12 +11,11 @@ module.exports = {
 
     // res.view(String: Nombre vista, Datos JSON)
     return res.view('vistas/home', {
-      titulo: 'Inicio',
       title: 'Inicio',
       numero: 1,
       mauricio: {
-        nombre: 'Mauricio',
-        cedula: 1718137159
+        nombre: 'Cristian',
+        cedula: 1723659403
       },
       usuarios: []
     })
@@ -54,7 +53,7 @@ module.exports = {
   listarUsuarios: function (req, res) {
 
     Usuario.find().exec(function (error, usuariosEncontrados) {
-      if (error) return res.serverError()
+      if (error) return res.serverError();
       sails.log.info(usuariosEncontrados);
       return res.view('vistas/listarUsuarios', {
         title: 'Lista de Usuarios',
@@ -81,7 +80,7 @@ module.exports = {
       Mascota.findOne({
         id: parametros.id
       }).exec(function (error, mascotaEncontrada) {
-        if (error) return res.serverError()
+        if (error) return res.serverError();
         return res.view('vistas/Mascota/editarMascota', {
           title: 'Editar mascota- ' + mascotaEncontrada.nombre,
           mascota: mascotaEncontrada
@@ -100,7 +99,7 @@ module.exports = {
   listarMascotas: function (req, res) {
 
     Mascota.find().populate("idRaza").exec(function (error, mascotasEncontrados) {
-      if (error) return res.serverError()
+      if (error) return res.serverError();
       return res.view('vistas/Mascota/listarMascotas', {
         title: 'Lista de Mascotas',
         mascotas: mascotasEncontrados
@@ -123,7 +122,7 @@ module.exports = {
       Raza.findOne({
         id: parametros.id
       }).exec(function (error, razaEncontrada) {
-        if (error) return res.serverError()
+        if (error) return res.serverError();
         return res.view('vistas/Raza/editarRaza', {
           title: 'Editar raza - ' + razaEncontrada.nombre,
           raza: razaEncontrada
@@ -142,7 +141,7 @@ module.exports = {
   listarRazas: function (req, res) {
 
     Raza.find().exec(function (error, razasEncontrados) {
-      if (error) return res.serverError()
+      if (error) return res.serverError();
       return res.view('vistas/Raza/listarRazas', {
         title: 'Lista de Razas',
         razas: razasEncontrados

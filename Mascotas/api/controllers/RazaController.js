@@ -14,7 +14,7 @@ module.exports = {
       if (parametros.nombre && parametros.tamanio) {
         Raza.create({
           nombre: parametros.nombre,
-          peso: parametros.tamanio
+          tamanio: parametros.tamanio
         }).exec(function (error, razaCreada) {
           if (error) return res.view('error', {
             title: 'Error',

@@ -7,9 +7,6 @@
     <h4 class="text-center"> Fecha de Nacimiento: <%=mascotas[i].fechaNacimiento.toLocaleString()%></h4>
 
     <p class="text-center">
-      <%= mascotas[i].paisNacimiento %>
-    </p>
-    <p class="text-center">
       <%= mascotas[i].idRaza.nombre %>
     </p>
     <a style="color:white" href="/Mascota/BorrarMascota?id=<%=mascotas[i].id%>">
@@ -21,5 +18,4 @@
     </a>
   </div>
   <%  } %>
-
 </div>

@@ -11,9 +11,7 @@ module.exports = {
 
     nombre: {
       type: 'string',
-      enum: ['Coker', 'Pastor Aleman', 'Labrador'],
-      required: true,
-      unique: true
+      required: true
     },
     tamanio: {
       type: 'string',

@@ -1,7 +1,7 @@
 <div style='background-color:white;color:black;'>
 
   <h1>Crea Mascotas</h1>
-  <p>Registra a tus mascotas</p>
+  <p>Registrar Mascotas</p>
 
   <form action="mascota/crearMascota" method="post">
     <div class="form-group">
@@ -15,7 +15,6 @@
     </div>
 
     <label for="">Raza</label>
-
     <select class="form-control" name="idRaza">
       <% for(var i=0; i<razas.length; i++){ %>
         <option value='<%=razas[i].id%>'>
@@ -23,16 +22,7 @@
         </option>
         <%  } %>
     </select>
-
-    <br>
-    <label for="">País  de Nacimiento</label>
-    <select class="form-control" name="paisNacimiento">
-      <option value='Ecuador'>Ecuador</option>
-      <option value='Perú'>Perú</option>
-      <option value='Colombia'>Colombia</option>
-    </select>
     <br>
     <button type="submit" class="btn btn-success">Crear Mascota</button>
-
   </form>
 </div>

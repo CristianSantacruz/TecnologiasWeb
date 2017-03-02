@@ -4,9 +4,6 @@
  * @description :: Server-side logic for managing Usuarios
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
-
-
-
 module.exports = {
 
   crearUsuario: function (req, res) {
@@ -22,13 +19,13 @@ module.exports = {
           apellidos: parametros.apellidos,
           correo: parametros.correo
         }).exec(function (error, usuarioCreado) {
-          if (error) return res.serverError()
+          if (error) return res.serverError();
           sails.log.info(usuarioCreado);
 
           Usuario.find({
             skip: 1
           }).exec(function (error, usuariosEncontrados) {
-            if (error) return res.serverError()
+            if (error) return res.serverError();
             sails.log.info(usuariosEncontrados);
             return res.view('vistas/listarUsuarios', {
               title: 'Lista de Usuarios',
@@ -81,7 +78,7 @@ module.exports = {
           sails.log.info('Se creo el usuario: ', usuarioCreado);
 
           Usuario.find().exec(function (error, usuariosEncontrados) {
-            if (error) return res.serverError()
+            if (error) return res.serverError();
             sails.log.info(usuariosEncontrados);
             return res.view('vistas/listarUsuarios', {
               title: 'Lista de Usuarios',
@@ -215,5 +212,4 @@ module.exports = {
       });
     }
   }
-
 };
