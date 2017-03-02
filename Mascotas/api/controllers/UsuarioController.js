@@ -6,6 +6,7 @@
  */
 
 module.exports = {
+
   CrearUsuario: function (req, res) {
 
     var parametros = req.allParams();
@@ -25,7 +26,7 @@ module.exports = {
           Usuario.find({
             skip: 1
           }).exec(function (error, usuariosEncontrados) {
-            if (error) return res.serverError()
+            if (error) return res.serverError();
             sails.log.info(usuariosEncontrados);
             return res.view('Vistas/Usuario/ListarUsuarios', {
               title: 'Lista de Usuarios',
@@ -53,7 +54,7 @@ module.exports = {
     }
   },
 
-  crearUsuarioForm: function (req, res) {
+  CrearUsuarioForm: function (req, res) {
 
     var parametros = req.allParams();
 
@@ -69,7 +70,6 @@ module.exports = {
               title: 'Error',
               error: {
                 descripcion: 'Hubo un error enviando los parámetros',
-                error,
                 url: '/CrearUsuario'
               }
             });
@@ -126,7 +126,6 @@ module.exports = {
               title: 'Error',
               error: {
                 descripcion: 'hubo un error enviando los parametros:',
-                error,
                 url: '/CrearUsuario'
               }
             });
