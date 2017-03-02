@@ -6,27 +6,29 @@
  */
 
 module.exports = {
+
   crearMascota: function (req, res) {
     var parametros = req.allParams();
 
     if (req.method == 'POST') {
-      if (parametros.nombre && parametros.idRaza) {
+      if (parametros.nombre && parametros.paisNacimiento && parametros.idRaza) {
         Mascota.create({
           nombre: parametros.nombre,
           fechaNacimiento: parametros.fechaNacimiento,
-          idRaza: parametros.idRaza
+          paisNacimiento: parametros.paisNacimiento,
+          idRaza: parametros.idRaza,
         }).exec(function (error, mascotaCreado) {
           if (error) return res.view('error', {
             title: 'Error',
             error: {
-              descripcion: 'No se creo la mascota ' + error,
-              url: '/CrearMascota'
+              descripcion: 'Hubo Problemas creando la mascota, intentalo de nuevo: ' + error,
+              url: '/crearMascota'
             }
           });
 
           Mascota.find().populate("idRaza").exec(function (error, mascotasEncontrados) {
-            if (error) return res.serverError();
-            return res.view('Vistas/Mascota/ListarMascotas', {
+            if (error) return res.serverError()
+            return res.view('vistas/Mascota/listarMascotas', {
               title: 'Lista de Mascotas',
               mascotas: mascotasEncontrados
             })
@@ -39,7 +41,7 @@ module.exports = {
           title: 'Error',
           error: {
             descripcion: 'No envia todos los parametros',
-            url: '/CrearMascota'
+            url: '/crearMascota'
           }
         });
       }
@@ -48,7 +50,7 @@ module.exports = {
         title: 'Error',
         error: {
           descripcion: 'Falla en el metodo HTTP',
-          url: '/CrearMascota'
+          url: '/crearMascota'
         }
       });
     }
@@ -63,24 +65,25 @@ module.exports = {
         Mascota.update({
           id: parametros.id
         }, {
-          nombre: parametros.nombre
+          nombre: parametros.nombre,
         }).exec(function (error) {
           if (error) {
             return res.view('error', {
               title: 'Error',
               error: {
-                descripcion: 'No se edito la mascota: ' + error,
-                url: '/ListarMascota'
+                descripcion: 'Hubo un error editando la mascota: ' + error,
+                url: '/listarMascota'
               }
             });
           }
           Mascota.find().populate("idRaza").exec(function (error, mascotasEncontradas) {
-            if (error) return res.serverError();
-            return res.view('Vistas/Mascota/ListarMascotas', {
+            if (error) return res.serverError()
+            return res.view('vistas/Mascota/listarMascotas', {
               title: 'Lista de Mascotas',
               mascotas: mascotasEncontradas
             })
           });
+
         });
 
       } else {
@@ -90,7 +93,7 @@ module.exports = {
           title: 'Error',
           error: {
             descripcion: 'No envía todos los parametros',
-            url: '/EditarMascota'
+            url: '/editarMascota'
           }
         });
       }
@@ -100,7 +103,7 @@ module.exports = {
         title: 'Error',
         error: {
           descripcion: 'Falla en el método HTTP',
-          url: '/EditarMascota'
+          url: '/editarMascota'
         }
       });
     }
@@ -115,7 +118,7 @@ module.exports = {
         id: parametros.id
       }).exec(function (errorInesperado, mascotaEliminada) {
         if (errorInesperado) {
-          return res.view('Vistas/Error', {
+          return res.view('vistas/Error', {
             error: {
               descripcion: "Tuvimos un Error Inesperado",
               rawError: errorInesperado,
@@ -127,30 +130,29 @@ module.exports = {
           .exec(function (errorIndefinido, mascotasEncontradas) {
 
             if (errorIndefinido) {
-              res.view('Vistas/Error', {
+              res.view('vistas/Error', {
                 error: {
-                  descripcion: "No se cargo las mascotas",
+                  descripcion: "Hubo un problema cargando las mascotas",
                   rawError: errorIndefinido,
                   url: "/ListarMascotas"
                 }
               });
             }
-            res.view('Vistas/Mascota/ListarMascotas', {
+            res.view('vistas/Mascota/listarMascotas', {
               mascotas: mascotasEncontradas
             });
           })
       })
 
     } else {
-      return res.view('Vistas/Error', {
+      return res.view('vistas/Error', {
         error: {
           descripcion: "Necesitamos el ID para borrar la mascota",
           rawError: "No envía ID",
-          url: "/ListarMascotas"
+          url: "/ListarMascota"
         }
       });
     }
   }
 
 };
-

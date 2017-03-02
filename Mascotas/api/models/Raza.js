@@ -8,15 +8,15 @@
 module.exports = {
 
   attributes: {
+
     nombre: {
       type: 'string',
-      enum: ['Coker', 'Pitbull', 'Pastor Aleman', 'Labrador'],
+      enum: ['Bulldog', 'Chihuahua', 'Pitbull'],
       required: true,
       unique: true
     },
-    tamanio: {
-      type: 'string',
-      enum: ['Pequeño', 'Mediano', 'Grande'],
+    peso: {
+      type: 'integer',
       required: true
     },
 
@@ -28,5 +28,5 @@ module.exports = {
     }
 
   }
-};
 
+};

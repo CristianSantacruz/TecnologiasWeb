@@ -18,12 +18,19 @@
 
     <select class="form-control" name="idRaza">
       <% for(var i=0; i<razas.length; i++){ %>
-      <option value='<%=razas[i].id%>'>
-        <%=razas[i].nombre%>
-      </option>
-      <%  } %>
+        <option value='<%=razas[i].id%>'>
+          <%=razas[i].nombre%>
+        </option>
+        <%  } %>
     </select>
 
+    <br>
+    <label for="">País  de Nacimiento</label>
+    <select class="form-control" name="paisNacimiento">
+      <option value='Ecuador'>Ecuador</option>
+      <option value='Perú'>Perú</option>
+      <option value='Colombia'>Colombia</option>
+    </select>
     <br>
     <button type="submit" class="btn btn-success">Crear Mascota</button>
 

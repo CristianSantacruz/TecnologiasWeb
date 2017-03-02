@@ -5,16 +5,18 @@
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 
+
+
 module.exports = {
 
-  CrearUsuario: function (req, res) {
+  crearUsuario: function (req, res) {
 
     var parametros = req.allParams();
     console.log(parametros);
 
     if (req.method == 'POST') {
       if (parametros.nombres && parametros.apellidos) {
-        //crear el usuario
+        //creo el usuario
         Usuario.create({
           nombres: parametros.nombres,
           apellidos: parametros.apellidos,
@@ -26,13 +28,14 @@ module.exports = {
           Usuario.find({
             skip: 1
           }).exec(function (error, usuariosEncontrados) {
-            if (error) return res.serverError();
+            if (error) return res.serverError()
             sails.log.info(usuariosEncontrados);
-            return res.view('Vistas/Usuario/ListarUsuarios', {
+            return res.view('vistas/listarUsuarios', {
               title: 'Lista de Usuarios',
               usuarios: usuariosEncontrados
             })
           });
+
 
         });
       } else {
@@ -52,9 +55,9 @@ module.exports = {
         }
       });
     }
-  },
 
-  CrearUsuarioForm: function (req, res) {
+  },
+  crearUsuarioForm: function (req, res) {
 
     var parametros = req.allParams();
 
@@ -70,16 +73,17 @@ module.exports = {
               title: 'Error',
               error: {
                 descripcion: 'Hubo un error enviando los parámetros',
-                url: '/CrearUsuario'
+                error,
+                url: '/crearUsuario'
               }
             });
           }
           sails.log.info('Se creo el usuario: ', usuarioCreado);
 
           Usuario.find().exec(function (error, usuariosEncontrados) {
-            if (error) return res.serverError();
+            if (error) return res.serverError()
             sails.log.info(usuariosEncontrados);
-            return res.view('Vistas/Usuario/ListarUsuarios', {
+            return res.view('vistas/listarUsuarios', {
               title: 'Lista de Usuarios',
               usuarios: usuariosEncontrados
             })
@@ -92,7 +96,7 @@ module.exports = {
           title: 'Error',
           error: {
             descripcion: 'No envia todos los parametros',
-            url: '/CrearUsuario'
+            url: '/crearUsuario'
           }
         });
       }
@@ -102,13 +106,12 @@ module.exports = {
         title: 'Error',
         error: {
           descripcion: 'Falla en el metodo HTTP',
-          url: '/CrearUsuario'
+          url: '/crearUsuario'
         }
       });
     }
 
   },
-
   editarUsuarioForm: function (req, res) {
 
     var parametros = req.allParams();
@@ -126,7 +129,8 @@ module.exports = {
               title: 'Error',
               error: {
                 descripcion: 'hubo un error enviando los parametros:',
-                url: '/CrearUsuario'
+                error,
+                url: '/crearUsuario'
               }
             });
           }
@@ -135,7 +139,7 @@ module.exports = {
           Usuario.find().exec(function (error, usuariosEncontrados) {
             if (error) return res.serverError()
             sails.log.info(usuariosEncontrados);
-            return res.view('Vistas/Usuario/ListarUsuarios', {
+            return res.view('vistas/listarUsuarios', {
               title: 'Lista de Usuarios',
               usuarios: usuariosEncontrados
             })
@@ -150,7 +154,7 @@ module.exports = {
           title: 'Error',
           error: {
             descripcion: 'No envia todos los parametros',
-            url: '/CrearUsuario'
+            url: '/crearUsuario'
           }
         });
       }
@@ -160,12 +164,12 @@ module.exports = {
         title: 'Error',
         error: {
           descripcion: 'Falla en el metodo HTTP',
-          url: '/CrearUsuario'
+          url: '/crearUsuario'
         }
       });
     }
-  },
 
+  },
   borrarUsuario: function (req, res) {
     var parametros = req.allParams();
 
@@ -195,7 +199,7 @@ module.exports = {
                 }
               });
             }
-            res.view('Vistas/Usuario/ListarUsuarios', {
+            res.view('vistas/listarUsuarios', {
               usuarios: usuariosEncontrados
             });
           })
@@ -211,4 +215,5 @@ module.exports = {
       });
     }
   }
+
 };

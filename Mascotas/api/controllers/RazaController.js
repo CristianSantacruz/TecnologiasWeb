@@ -6,6 +6,7 @@
  */
 
 module.exports = {
+
   crearRaza: function (req, res) {
     var parametros = req.allParams();
 
@@ -18,14 +19,14 @@ module.exports = {
           if (error) return res.view('error', {
             title: 'Error',
             error: {
-              descripcion: 'No se creo la raza, inténtalo de nuevo: ' + error,
-              url: '/CrearRaza'
+              descripcion: 'Hubo problemas creando la raza, inténtalo de nuevo: ' + error,
+              url: '/crearRaza'
             }
           });
           Raza.find().exec(function (error, razasEncontrados) {
-            if (error) return res.serverError();
+            if (error) return res.serverError()
             sails.log.info(razasEncontrados);
-            return res.view('Vistas/Raza/ListarRazas', {
+            return res.view('vistas/Raza/listarRazas', {
               title: 'Lista de Razas',
               razas: razasEncontrados
             })
@@ -37,7 +38,7 @@ module.exports = {
           title: 'Error',
           error: {
             descripcion: 'No envia todos los parametros',
-            url: '/CrearRaza'
+            url: '/crearRaza'
           }
         });
       }
@@ -46,7 +47,7 @@ module.exports = {
         title: 'Error',
         error: {
           descripcion: 'Falla en el metodo HTTP',
-          url: '/CrearRaza'
+          url: '/crearRaza'
         }
       });
     }
@@ -66,15 +67,15 @@ module.exports = {
             return res.view('error', {
               title: 'Error',
               error: {
-                descripcion: 'No se edito la raza: ' + error,
-                url: '/ListarRazas'
+                descripcion: 'Hubo un error editando la raza: ' + error,
+                url: '/listarRazas'
               }
             });
           }
 
           Raza.find().exec(function (error, razasEncontradas) {
             if (error) return res.serverError();
-            return res.view('Vistas/Raza/ListarRazas', {
+            return res.view('vistas/Raza/listarRazas', {
               title: 'Lista de Razas',
               razas: razasEncontradas
             })
@@ -87,7 +88,7 @@ module.exports = {
           title: 'Error',
           error: {
             descripcion: 'No envía todos los parametros',
-            url: '/EditarRaza'
+            url: '/editarRaza'
           }
         });
       }
@@ -97,7 +98,7 @@ module.exports = {
         title: 'Error',
         error: {
           descripcion: 'Falla en el método HTTP',
-          url: '/EditarRaza'
+          url: '/editarRaza'
         }
       });
     }
@@ -126,13 +127,13 @@ module.exports = {
             if (errorIndefinido) {
               res.view('vistas/Error', {
                 error: {
-                  descripcion: "No se cargo las razas",
+                  descripcion: "Hubo un problema cargando las razas",
                   rawError: errorIndefinido,
                   url: "/ListarRazas"
                 }
               });
             }
-            res.view('Vistas/Raza/ListarRazas', {
+            res.view('vistas/Raza/listarRazas', {
               razas: razasEncontradas
             });
           })
@@ -141,9 +142,9 @@ module.exports = {
     } else {
       return res.view('vistas/Error', {
         error: {
-          descripcion: "Ingrese el ID para borrar la raza",
+          descripcion: "Necesitamos el ID para borrar la raza",
           rawError: "No envía ID",
-          url: "/ListarRazas"
+          url: "/ListarRaza"
         }
       });
     }

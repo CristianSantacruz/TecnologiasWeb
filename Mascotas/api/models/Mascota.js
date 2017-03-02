@@ -8,20 +8,32 @@
 module.exports = {
 
   attributes: {
-    nombre:{
-      type:'string',
-      required:true
-    },
-    fechaNacimiento:{
-      type:'date'
-    },
 
-    idRaza:{
-      // Model-> es el nombre de la tabla padre
-      model: 'Raza',
-      // Required es OPCIONAL si no queremos registros huerfanos de raza
-      required:true
-    }
+      nombre:{
+          type:'string',
+          required:true
+      },
+      fechaNacimiento:{
+          type:'date'
+      },
+      paisNacimiento:{
+          type:'string',
+          enum:['Ecuador','Perú','Colombia']
+      },
+
+      idRaza:{
+          // Model-> es el nombre de la tabla padre
+          model: 'Raza',
+          // Required es OPCIONAL si no queremos registros huerfanos de raza
+          required:true
+      }
   }
 };
+
+
+
+
+
+
+
 

@@ -8,21 +8,32 @@
 module.exports = {
 
   attributes: {
-    nombres:{
-      type:'string',
-      minLength:5,
-      required:true
-    },
-    apellidos:{
-      type:'string',
-      minLength:4,
-      required:true
-    },
-    correo:{
-      type:'string',
-      email:true,
-      defaultsTo:'correo@invalido.com'
-    }
+      nombres:{
+          type:'string',
+          minLength:5,
+          required:true
+      },
+      apellidos:{
+          type:'string',
+          minLength:4,
+          required:true
+      },
+      correo:{
+          type:'string',
+          email:true,
+          defaultsTo:'correo@invalido.com'
+      }
   }
+
 };
+
+
+
+
+
+
+
+
+
+
 
